@@ -1,0 +1,14 @@
+\BOOKMARK [2][]{Outline0.1}{Introducción y contexto}{}% 1
+\BOOKMARK [3][]{Outline0.1.1.4}{1.1. Cáncer y heterogeneidad celular}{Outline0.1}% 2
+\BOOKMARK [3][]{Outline0.1.2.9}{1.2. Tecnologías para explorar la heterogeneidad celular: scRNA-seq}{Outline0.1}% 3
+\BOOKMARK [3][]{Outline0.1.3.14}{1.3. Métodos de deconvolución de muestras bulk RNA-seq}{Outline0.1}% 4
+\BOOKMARK [2][]{Outline0.2}{Objetivos}{}% 5
+\BOOKMARK [2][]{Outline0.3}{digitalDLSorteR: transformación de la pipeline en paquete de R}{}% 6
+\BOOKMARK [3][]{Outline0.3.1.33}{2.1. Fundamento del método}{Outline0.3}% 7
+\BOOKMARK [3][]{Outline0.3.2.38}{2.1.\040digitalDLSorteR:\040flujo\040de\040trabajo}{Outline0.3}% 8
+\BOOKMARK [2][]{Outline0.4}{PhenoGraph}{}% 9
+\BOOKMARK [3][]{Outline0.4.1.48}{1. Construcción del grafo}{Outline0.4}% 10
+\BOOKMARK [3][]{Outline0.4.2.52}{2. Partición del grafo en comunidades}{Outline0.4}% 11
+\BOOKMARK [2][]{Outline0.5}{Resultados}{}% 12
+\BOOKMARK [2][]{Outline0.6}{Otros métodos}{}% 13
+\BOOKMARK [1][]{Outline1}{Appendix}{}% 14

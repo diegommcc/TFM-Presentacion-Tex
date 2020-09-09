@@ -1,0 +1,13 @@
+\beamer@sectionintoc {1}{Introducción y contexto}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{1.1. Cáncer y heterogeneidad celular}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{1.2. Tecnologías para explorar la heterogeneidad celular: \textit {scRNA-seq}}{9}{0}{1}
+\beamer@subsectionintoc {1}{3}{1.3. Métodos de deconvolución de muestras \textit {bulk RNA-seq}}{14}{0}{1}
+\beamer@sectionintoc {2}{Objetivos}{20}{0}{2}
+\beamer@sectionintoc {3}{digitalDLSorteR: transformación de la \textit {pipeline} en paquete de R}{32}{0}{3}
+\beamer@subsectionintoc {3}{1}{2.1. Fundamento del método}{33}{0}{3}
+\beamer@subsectionintoc {3}{2}{2.1. digitalDLSorteR: flujo de trabajo}{38}{0}{3}
+\beamer@sectionintoc {4}{PhenoGraph}{46}{0}{4}
+\beamer@subsectionintoc {4}{1}{1. Construcción del grafo}{48}{0}{4}
+\beamer@subsectionintoc {4}{2}{2. Partición del grafo en comunidades}{52}{0}{4}
+\beamer@sectionintoc {5}{Resultados}{65}{0}{5}
+\beamer@sectionintoc {6}{Otros métodos}{70}{0}{6}

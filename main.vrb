@@ -1,0 +1,25 @@
+\frametitle{Extra}
+\begin{alertblock}{F-measure}
+    \begin{align*}
+      F(c_i, k_j)    & = \frac{2 \times Pr_{ij} \times Re_{ij}}{Pr_{ij} + Re_{ij}} \\
+      F_{mean}(C, K) & = \sum_{ci} \frac{|c_i|}{N} max_{k_j}F(c_i, k_j)
+    \end{align*}
+  \end{alertblock}
+
+  \vskip-1.5em
+
+  \begin{alertblock}{Normalized Mutual Information}
+    \begin{equation*}
+      NMI = \frac{I(X;Y)}{\sqrt{H(X)H(Y)}}
+    \end{equation*}
+  \end{alertblock}
+
+  \vskip-1em
+
+  \begin{alertblock}{Non-redundancy score (NRS)}
+    \begin{equation*}
+      NRS(A_p) = \sum_{k = 1:c} |coeff(k)| \times eigenvalue(k)
+    \end{equation*}
+
+
+  \end{alertblock}
