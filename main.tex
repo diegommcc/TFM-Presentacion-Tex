@@ -1,6 +1,13 @@
-\documentclass[10pt,aspectratio=169]{beamer}
+  \documentclass[10pt,aspectratio=169]{beamer}
 
 \usetheme[progressbar=frametitle]{metropolis}
+
+\makeatletter
+% \setlength{\metropolis@titleseparator@linewidth}{1pt}
+\setlength{\metropolis@progressonsectionpage@linewidth}{0.7pt}
+\setlength{\metropolis@progressinheadfoot@linewidth}{0.7pt}
+\makeatother
+
 \usepackage{appendixnumberbeamer}
 \usepackage[absolute,overlay]{textpos}
 \usepackage{booktabs}
@@ -14,16 +21,19 @@
 \newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
 \usecolortheme{default}
 % Colores defined
-\usepackage{color}
+\usepackage{color, colortbl}
 \definecolor{White}{HTML}{ffffff}
 \definecolor{Blue}{HTML}{183354}
 \definecolor{Gray}{HTML}{e6e6e6} % d6d6d6
 \definecolor{Orange}{HTML}{ff8000}
 \definecolor{OrangeBackground}{HTML}{fff3e6}
+\definecolor{BlueBorder}{HTML}{345eeb}
+\definecolor{BlueBackground}{HTML}{dee8fc}
 
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
 \definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{Purple}{HTML}{6f42c1}
 \definecolor{darkgray}{RGB}{96, 98, 99}
 \definecolor{darkred}{RGB}{145, 29, 16}
 
@@ -74,7 +84,7 @@
 	numbersep=5pt,
 	tabsize=2,
 	numberstyle=\tiny\color{darkred},
-	keywordstyle=\color{mauve},
+	keywordstyle=\color{Purple},
 	commentstyle=\color{darkgray},
 	stringstyle=\color{dkgreen},
 	breaklines=true,
@@ -123,6 +133,8 @@
 }
 
 \usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
+
 \newsavebox\blockbox
 \newenvironment{highlightblock}{%
   \begin{lrbox}{\blockbox}%
@@ -151,6 +163,21 @@
     urlcolor=magenta
 }
 
+\usepackage{multicol,multirow}
+
+
+\makeatletter
+\def\rowcolor{\noalign{\ifnum0=`}\fi\bmr@rowcolor}
+\newcommand<>{\bmr@rowcolor}{%
+    \alt#1%
+        {\global\let\CT@do@color\CT@@do@color\@ifnextchar[\CT@rowa\CT@rowb}% 
+        {\ifnum0=`{\fi}\@gooble@rowcolor}% 
+}
+
+\newcommand{\@gooble@rowcolor}[2][]{\@gooble@rowcolor@}
+\newcommand{\@gooble@rowcolor@}[1][]{\@gooble@rowcolor@@}
+\newcommand{\@gooble@rowcolor@@}[1][]{\ignorespaces}
+\makeatother
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TITLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -190,7 +217,7 @@ Curso 2019-2020}
 
 % Cáncer y micro-entorno tumoral ---------------------------------------------------
 
-\subsection{1.1. Cáncer y heterogeneidad celular}
+% \subsection{1.1. Cáncer y heterogeneidad celular}
 
 % \begin{frame}[fragile]{Cáncer y micro-entorno tumoral}
 % \end{frame}
@@ -303,7 +330,7 @@ Curso 2019-2020}
 
 % Tecnologías para estudiar células: scRNAseq --------------------------------------
 
-\subsection{1.2. Tecnologías para explorar la heterogeneidad celular: \textit{scRNA-seq}}
+% \subsection{1.2. Tecnologías para explorar la heterogeneidad celular: \textit{scRNA-seq}}
 
 \begin{frame}[fragile,t]{Estudio de la heterogeneidad celular}
   % \vskip0.5em
@@ -409,7 +436,7 @@ Curso 2019-2020}
     \end{beamercolorbox}}
 \end{frame}
 
-\subsection{1.3. Métodos de deconvolución de muestras \textit{bulk RNA-seq}}
+% \subsection{1.3. Métodos de deconvolución de muestras \textit{bulk RNA-seq}}
 
 \begin{frame}{Deconvolución de muestras \textit{bulk RNA-seq}}
   \alert{Deconvolución:} estimación de la señal individual de cada uno de los componentes (tipos celulares) a partir de una mezcla de los mismos (muestra tisular).
@@ -569,7 +596,7 @@ Curso 2019-2020}
 
 % Fundamento -----------------------------------------------------------------
 
-\subsection{2.1. Fundamento del método}
+% \subsection{2.1. Fundamento del método}
 
 \begin{frame}[fragile]{Fundamento del método}
   \begin{overlayarea}{\linewidth}{1\textheight}
@@ -607,15 +634,15 @@ Curso 2019-2020}
 
     \begin{enumerate}
       \alert<2>{\item Simulación de perfiles \textit{scRNA-seq} (si es necesario):} uso del modelo ZINB-WaVE en caso de tipos celulares poco representados o pocas células de partida.
-            \alert<3>{\item Simulación de perfiles \textit{bulk RNA-seq} de composición celular conocida}: agregación de perfiles \textit{single-cell} en función del tipo celular al que pertenecen.
-            \alert<4>{\item Entrenamiento y evaluación de la Red Neuronal Profunda}: deconvolución de nuevas muestras \textit{bulk}.
+            \alert<3>{\item Simulación de perfiles \textit{bulk RNA-seq} de composición celular conocida:} agregación de perfiles \textit{single-cell} en función del tipo celular al que pertenecen.
+            \alert<4>{\item Entrenamiento y evaluación de la Red Neuronal Profunda:} deconvolución de nuevas muestras \textit{bulk}.
     \end{enumerate}
   \end{overlayarea}
 \end{frame}
 
 % Herramienta -----------------------------------------------------------------
 
-\subsection{2.1. digitalDLSorteR: flujo de trabajo}
+% \subsection{2.1. digitalDLSorteR: flujo de trabajo}
 
 \begin{frame}{digitalDLSorteR: flujo de trabajo}
 
@@ -660,6 +687,7 @@ Curso 2019-2020}
                 \item Modelo específico: 13 tipos celulares.
               \end{enumerate}
         \item Datos procedentes de Chung et al., 2017 (\href{https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE75688}{GSE75688}).
+        \item Agregación de tipos celulares con \texttt{simplify.set} y \texttt{simplify.majority}.
       \end{itemize}
     \end{column}
   \end{columns}
@@ -671,8 +699,8 @@ Curso 2019-2020}
 \begin{frame}{Construcción de nuevos modelos}
   \begin{alertblock}{Clases}
     \begin{itemize}
-      \item \textit{DigitalDLSorter}: núcleo del paquete. 
-      \item \textit{ProbMatrixCellTypes}: información relativa a las matrices de composición celular. 
+      \item \textit{DigitalDLSorter}: núcleo del paquete.
+      \item \textit{ProbMatrixCellTypes}: información relativa a las matrices de composición celular.
       \item \textit{DigitalDLSorterDNN}: información relativa a la Red Neuronal Profunda.
       \item Otras clases: \textit{SingleCellExperiment}, \textit{SummarizedExperiment}, etc.
     \end{itemize}
@@ -681,10 +709,10 @@ Curso 2019-2020}
   \begin{alertblock}{Flujo de trabajo}
     \begin{enumerate}
       \item Carga de datos y simulación de nuevos perfiles \textit{single-cell} (si es necesario).
-      \item Generación de matrices de composición celular.
+      \item Generación de la matriz de composición celular.
       \item Simulación de perfiles \textit{bulk RNA-seq} de acuerdo a las proporciones establecidas en el paso anterior. Preparación de los datos para el entrenamiento.
-      \item Entrenamiento de la red neuronal y evaluación. 
-      \item Carga de nuevos datos y su deconvolución.
+      \item Entrenamiento de la red neuronal y evaluación.
+      \item Carga de nuevos datos \textit{bulk} y su deconvolución.
     \end{enumerate}
   \end{alertblock}
 \end{frame}
@@ -700,7 +728,7 @@ Curso 2019-2020}
   \end{figure}
 
   \begin{itemize}
-    \item Carga de los datos en un objeto de la clase \textit{DigitalDLSorter} $\rightarrow$ matriz de expresión, metadatos de células y metadatos de genes.
+    \item Carga de los datos en un objeto de la clase \textit{DigitalDLSorter} en el slot \textit{single.cell.real} o \textit{single.cell.final} $\rightarrow$ matriz de expresión, metadatos de células y metadatos de genes.
     \item Si es necesario: estimación de parámetros mediante el modelo ZINB-WaVE y simulación de nuevos perfiles \textit{single-cell}: distribución binomial negativa cero inflada.
   \end{itemize}
 \end{frame}
@@ -721,467 +749,735 @@ Curso 2019-2020}
 
 \begin{frame}[fragile]{2. Generación de la matriz de composición celular}
 
+  \only<1>{
+    \begin{figure}
+      \centering
+      \vskip-3em
+      \includegraphics[width=12cm]{images/generateBulkMatrix_1_fixed_1.png}
+    \end{figure}
+  }
+
+  \only<2>{
+    \begin{figure}
+      \centering
+      \vskip-3em
+      % \vskip1mm
+      \includegraphics[width=12cm]{images/generateBulkMatrix_2_fixed_1.png}
+    \end{figure}
+  }
+
+  \only<3>{
+    \begin{figure}
+      \centering
+      \vskip-2em
+      \includegraphics[width=11cm]{images/generateBulkMatrix_3_1.png}
+    \end{figure}
+  }
+
+  \begin{textblock*}{\textwidth}(0.5cm,7cm)
+    \Fontvi
+    \begin{itemize}
+      \item Generación de un objeto \textit{ProbMatrixCellTypes} en el slot \textit{prob.cell.types}.
+      \item 6 métodos distintos para evitar posibles sesgos en la composición de las muestras \textit{bulk}.
+      \item Perfiles \textit{single-cell} son separados en entrenamiento y test.
+    \end{itemize}
+  \end{textblock*}
+\end{frame}
+
+
+\begin{frame}[fragile,t]{2. Generación de la matriz de composición celular}
+  \lstinputlisting[]{./boxcodes/boxcode4.R}
+\end{frame}
+
+% Simulación de perfiles bulk y preparación de los datos para el entrenamiento -----
+
+\begin{frame}[fragile]{3. Simulación de perfiles \textit{bulk} y preparación de los datos}
+
   \begin{figure}
     \centering
-    \includegraphics[width=12cm]{images/generateBulkMatrix.png}
+    \includegraphics[width=13cm]{images/bulkSimulation_1.png}
+  \end{figure}
+
+  % \begin{textblock*}{\textwidth}(0.5cm,7.3cm)
+  \begin{enumerate}
+    \item Simulación de los perfiles \textit{bulk} de acuerdo a las proporciones y al número de células establecidas en el paso anterior.
+    \item Preparación de los datos para el entrenamiento de la red neuronal y su evaluación: combinación de perfiles, normalización...
+  \end{enumerate}
+  % \end{textblock*}  
+\end{frame}
+
+
+\begin{frame}[fragile]{3. Simulación de perfiles \textit{bulk}}
+
+  % \vskip-0.5em
+  \begin{figure}
+    \centering
+    \includegraphics[width=10cm]{images/simulBulk_1_1.png}
+  \end{figure}
+
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+      \begin{equation*}
+        T_{ij} = \sum_{k = 1}^{K} \sum_{z = 1}^Z C_{izk}
+      \end{equation*}
+
+      \begin{equation*}
+        \arraycolsep=1pt\def\arraystretch{1}
+        \textrm{de forma que} \left\{
+        \begin{array}{l}
+          i = 1 \ldots M                \\
+          j = 1 \ldots N                \\
+          Z = 1 \ldots 100 \cdot P_{jk} \\
+          \sum_{k = 1}^K Z \cdot P_{jk} = 100
+        \end{array}
+        \right.
+      \end{equation*}
+    \end{column}
+
+    \begin{column}{0.65\textwidth}
+      \Fontvi
+      \begin{itemize}
+        \item Sumatorio de \texttt{n.cells} (100 en este caso) perfiles \textit{single-cell} ($z$) en función del tipo celular ($k$) al que pertenezcan para cada muestra \textit{bulk} ($j$).
+        \item Implementación: posibilidad de utilizar ficheros HDF5 como \textit{back-end}: paquetes DelayedArray y HDF5Array.
+      \end{itemize}
+      \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
+        2 matrices de 23.555 filas y 18.777 columnas:\\6,5GB $\rightarrow$ 4,4kB
+      \end{beamercolorbox}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{3. Preparación de los datos para entrenamiento y evaluación}
+
+  \vskip-0.5em
+  \begin{figure}
+    \centering
+    \includegraphics[width=10cm]{images/preparingSamples_1.png}
   \end{figure}
 
   \begin{itemize}
-    \item Carga de los datos en un objeto de la clase \textit{DigitalDLSorter} $\rightarrow$ matriz de expresión, metadatos de células y metadatos de genes.
-    \item Si es necesario: estimación de parámetros mediante el modelo ZINB-WaVE y simulación de nuevos perfiles \textit{single-cell}: distribución binomial negativa cero inflada.
+    \item Combinación de perfiles mediante el argumento \texttt{combine}:
+          \begin{itemize}
+            \item Solo perfiles \textit{single-cell}.
+            \item Solo perfiles \textit{bulk}.
+            \item Combinación de ambos.
+          \end{itemize}
+    \item Normalización: cálculo CPM y establecimiento de $\mu = 0$ y $\sigma = 1$
+    \item Transposición de la matriz resultante.
   \end{itemize}
+
+  \vskip1em
+
+  \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
+    Posibilidad de usar ficheros HDF5 $\rightarrow$ rápida lectura de las muestras durante entrenamiento y predicción
+  \end{beamercolorbox}
+
 \end{frame}
 
+
+\begin{frame}[fragile,t]{3. Simulación de perfiles \textit{bulk} y preparación de datos}
+  \lstinputlisting[]{./boxcodes/boxcode5.R}
+\end{frame}
+
+
+% Entrenamiento de la red neuronal -------------------------------------------------
+
+\begin{frame}[fragile]{4. Entrenamiento y evaluación del modelo}
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=13cm]{images/training_DNN_1.png}
+  \end{figure}
+
+  % \begin{textblock*}{\textwidth}(0.5cm,7.3cm)
+  \begin{enumerate}
+    \item Entrenamiento de la Red Neuronal Profunda con los datos seleccionados en el slot \textit{final.data}.
+    \item Cálculo de métricas de error para determinar el desempeño del modelo durante la resolución del problema de deconvolución sobre las muestras de test.
+  \end{enumerate}
+  % \end{textblock*}  
+\end{frame}
+
+\begin{frame}[fragile]{4. Entrenamiento de la Red Neuronal Profunda}
+  Uso de los paquetes \alert{Keras} y \alert{Tensorflow}: API de R para el módulo Keras de Python.
+
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \vskip-1em
+      \lstinputlisting[]{./boxcodes/boxcode6.R}
+      \Fontvi{
+        \begin{alertblock}{Parámetros}
+          \begin{itemize}
+            \item Número de épocas con \texttt{num.epochs}.
+            \item Tamaño de \textit{batch} con \textit{batch.size}.
+            \item Subset de validación con \texttt{val} y \texttt{freq.val}.
+            \item Función de pérdida con \texttt{loss} (Divergencia de Kullback-Leibler por defecto).
+          \end{itemize}
+        \end{alertblock}
+      }
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=5cm]{images/DiagramNeuralNetwork.pdf}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}[fragile]{4. Evaluación del modelo sobre los datos de test}
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=5cm]{images/training_DNN_4_1_1.png}
+      \end{figure}
+    \end{column}
+
+    \begin{column}{0.6\textwidth}
+      \begin{itemize}
+        \item \texttt{calculateEvalMetrics}: cálculo de error absoluto y error cuadrático.
+        \item \texttt{distErrorPlot} y \texttt{barErrorPlot}: distribución de los errores en función de tipo celular, número de tipos celulares.
+        \item \texttt{corrExpPredPlot}: gráficos de correlación $\rightarrow$ coeficiente de correlación de Pearson ($R$) y Coeficiente de correlación de concordancia (CCC).
+        \item \texttt{blandAltmanLehPlot}: gráfico de concordancia entre predicción y real.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
+  \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
+    Determinación del desempeño del modelo
+  \end{beamercolorbox}
+\end{frame}
+
+% Meter un link que te lleve a una app shiny en la que generar diferentes plots con las funciones.
+
+\begin{frame}[fragile]{5. Carga de nuevos datos \textit{bulk} y deconvolución}
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=8cm]{images/deconvNewSamples_1.png}
+  \end{figure}
+
+  % \begin{textblock*}{\textwidth}(0.5cm,7.3cm)
+  \begin{itemize}
+    \item Carga de nuevas muestras \textit{bulk} en el objeto \textit{DigitalDLSorter} mediante \texttt{loadDeconvDataFromSummarizedExperiment} o \texttt{loadDeconvDataFromFile}.
+    \item Deconvolución y representación.
+  \end{itemize}
+  % \end{textblock*}  
+\end{frame}
+
+
+\begin{frame}[fragile,t]{5. Carga de nuevos datos \textit{bulk} y deconvolución}
+  \lstinputlisting[]{./boxcodes/boxcode8.R}
+\end{frame}
+
+% \begin{frame}[fragile,t]{Otras funcionalidades}
+%   \begin{itemize}
+%     \item Guardar objetos \textit{DigitalDLSorter} como ficheros rds y rda.
+%     \item Guardar modelos de Keras como ficheros HDF5.
+%   \end{itemize}
+% \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ANÁLISIS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\section[Análisis de datos \textit{scRNA-seq}]{Análisis de datos \textit{scRNA-seq}}
 
+
+\begin{frame}{Datos utilizados}
+
+  Datos \textit{scRNA-seq} de \alert{cáncer de mama} procedentes del artículo Chung at al., 2017.
+  \vskip3mm
+  \begin{columns}
+    \begin{column}{0.4\textwidth}
+      \begin{itemize}
+        \item Se utilizaron las lecturas obtenidas de la base de datos SRA (\href{https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP066982}{SRP066982}).
+        \item 11 pacientes que representan los 4 subtipos de cáncer de mama.
+        \item Total células: 549.
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.6\textwidth}
+      \Fonteight{
+        \begin{table}[!h]
+          \centering
+          \begin{tabular}{cccc}
+            \toprule
+            \textbf{Paciente} & \textbf{Subtipo} & \textbf{Tejido}  & \textbf{\# células} \\
+            \midrule
+            BC01              & Luminal A        & Tumor primario   & 26                  \\
+            BC02              & Luminal A        & Tumor primario   & 56                  \\
+            BC03              & Luminal B        & Tumor primario   & 37                  \\
+            BC04              & HER2             & Tumor primario   & 59                  \\
+            BC05              & HER2             & Tumor primario   & 77                  \\
+            BC06              & HER2             & Tumor primario   & 25                  \\
+            BC07              & TNBC             & Tumor primario   & 51                  \\
+            BC08              & TNBC             & Tumor primario   & 23                  \\
+            BC09              & TNBC             & Tumor primario   & 60                  \\
+            BC10              & TNBC             & Tumor primario   & 16                  \\
+            BC11              & TNBC             & Tumor primario   & 11                  \\
+            BC03LN            & Luminal B        & Tejido linfático & 55                  \\
+            BC07LN            & TNBC             & Tejido linfático & 53                  \\
+            \bottomrule
+          \end{tabular}
+        \end{table}
+      }
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Análisis: separación de células tumorales y no tumorales}
+
+  \vskip0.5em
+
+  \Fontvi{
+    \alert{--} Alineamiento y cuantificación con \alert{RSEM} y \alert{STAR}.
+
+    \alert{--} Análisis de datos \textit{scRNA-seq} mediante el paquete de R \alert{Seurat}.
+  }
+  \tikzstyle{format} = [draw=Orange, line width=0.25mm, thin, fill=OrangeBackground, rounded corners=0.25ex, align=center]
+  \tikzstyle{medium} = [ellipse, draw=BlueBorder, thin, fill=BlueBackground, minimum height=2.5em, align=center]
+  \begin{center}
+    \begin{tikzpicture}[node distance=2cm,>=latex', inner sep = 4pt, auto,>=latex', thick, scale=0.6, every node/.style={scale=0.6}]
+      % We need to set at bounding box first. Otherwise the diagram
+      % will change position for each frame.
+      % \path[use as bounding box] (-1,0) rectangle (10,-2);
+      \path[->] node[format] (align) {Alineamiento\\y cuantificación};
+      \path[->] node[format, right = of align] (filt) {Filtrado y\\normalización}
+      (align) edge node {} (filt);
+      \path[->] node[format, right = of filt] (dim) {Reducción de dimensionalidad\\y clusterización}
+      (filt) edge node {} (dim)
+      node[medium, below of=filt] (cell) {488 células\\761 genes}
+      (filt) edge node {} (cell)
+      node[medium, below of=dim] (clus) {12 PCs\\15 clústeres}
+      (dim) edge node {} (clus);
+      %       edge node[swap] {xdvi} (screen);
+      % \path[->] node[format, right of=ps] (pdf) {.pdf file}
+      %               node[medium, below of=ps] (print) {printer}
+      %               (ps) edge node {ps2pdf} (pdf)
+      %                    edge node[swap] {gs} (screen)
+      %                    edge (print);
+      % \path[->] (pdf) edge (screen)
+      %                     edge (print);
+      % \path[->, draw] (tex) -- +(0,1) -| node[near start] {pdf\TeX} (pdf);
+    \end{tikzpicture}
+  \end{center}
+
+  \vskip-1em
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=7cm]{images/TSNE_all_def_2.png}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Filtrado: 488 células.
+        \item Normalización: 761 genes más variables.
+        \item Reducción de la dimensionalidad: 12 componentes principales.
+        \item Clusterización: 15 clústeres.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Análisis: separación de células tumorales y no tumorales}
+
+  \begin{columns}
+    \begin{column}{0.7\textwidth}
+      \Fontvi{Aproximación seguida por los autores del artículo: comparativa de los \alert{patrones de expresión} entre células y tejido mamario normal.}
+      \begin{figure}
+        \includegraphics[width=9cm]{images/heatmap_expr_tumor.png}
+      \end{figure}
+    \end{column}
+
+    \begin{column}{0.4\textwidth}
+      \begin{figure}
+        \centering
+        \includegraphics[width=4.2cm]{images/tsne_TumorVnoTumor.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Análisis e identificación de células no tumorales}
+  \tikzstyle{format} = [draw=Orange, line width=0.25mm, thin, fill=OrangeBackground, rounded corners=0.25ex, align=center]
+  \tikzstyle{medium} = [ellipse, draw=BlueBorder, thin, fill=BlueBackground, minimum height=2.5em, align=center]
+
+  \begin{center}
+    \begin{tikzpicture}[node distance=2cm,>=latex', inner sep = 4pt, auto,>=latex', thick, scale=0.6, every node/.style={scale=0.6}]
+      \path[->] node[format, right = of align] (filt) {Normalización};
+      \path[->] node[format, right = of filt] (dim) {Reducción de dimensionalidad\\y clusterización}
+      (filt) edge node {} (dim)
+      node[medium, below of=filt] (cell) {733 genes}
+      (filt) edge node {} (cell)
+      node[medium, below of=dim] (clus) {8 PCs\\10 clústeres}
+      (dim) edge node {} (clus);
+    \end{tikzpicture}
+  \end{center}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \includegraphics[width=7cm]{images/tsnenoTumorCells_3.png}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Normalización: 733 genes más variables.
+        \item Reducción de la dimensionalidad: 8 componentes principales.
+        \item Clusterización: 9 clústeres.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
+  % \vskip0.5em
+  \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
+    Caracterización mediante el paquete de R \alert{SingleR}\\y el \alert{análisis manual de marcadores específicos de tipo celular}.
+  \end{beamercolorbox}
+
+\end{frame}
+
+
+\begin{frame}[fragile]{Análisis e identificación de células no tumorales}
+  \begin{columns}
+
+    \begin{column}{0.6\textwidth}
+      \vskip-1em
+      \begin{figure}
+        \centering
+        \includegraphics[width=10cm]{images/tsneClassFinal_2.png}
+      \end{figure}
+    \end{column}
+
+    \begin{column}{0.3\textwidth}
+      \begin{textblock*}{3cm}(12cm,2cm)
+        \begin{highlightblock}
+          \centering
+          \Fonteight{Mayor resolución:\\13 tipos celulares}
+        \end{highlightblock}
+      \end{textblock*}
+      \begin{textblock*}{3cm}(12cm,5.5cm)
+        \begin{highlightblock}
+          \centering
+          \Fonteight{Menor resolución:\\7 tipos celulares}
+        \end{highlightblock}
+      \end{textblock*}
+    \end{column}
+
+  \end{columns}
+
+\end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MODELOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\section[Puesta en práctica de digitalDLSorteR: deconvolución muestras de cáncer de mama]{Puesta en práctica de digitalDLSorteR: deconvolución muestras de cáncer de mama}
 
+\begin{frame}{Modelos}
 
-%--------------------------------------------------------------------------%
+  Flujo de trabajo mostrado anteriormente:
 
-\begin{frame}{Introducción: Clustering}
-  \vskip1em
-  Conocer la \alert{\textbf{estructura de las poblaciones celulares}}.
-  \Fontvi
-  \vskip0.5em
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \begin{alertblock}{Por qué}
-        \begin{itemize}
-          \item Qué fenotipos hay presentes.
-          \item Qué perfiles de expresión.
-          \item Qué células son similares y qué celulas no.
-        \end{itemize}
-      \end{alertblock}
-      \begin{alertblock}{Características}
-        \begin{itemize}
-          \item Escalable.
-          \item No paraḿetrico.
-          \item Alta dimensionalidad.
-          \item Geometrías no estándar.
-        \end{itemize}
-      \end{alertblock}
-    \end{column}
-    \begin{column}{0.4\textwidth}
-      \begin{textblock*}{5cm}(7cm,3cm)
-        \includegraphics[scale=.5]{images/10x_mod.jpg}
-      \end{textblock*}
-    \end{column}
-  \end{columns}
-
-  \begin{center}
-    \fontsize{15}{7.2}\selectfont
-    \begin{itemize}
-      \begin{center}
-        \vskip1em
-        \hskip-12mm
-        \item<2>[\alert{\textbf{PhenoGraph}}]
-      \end{center}
-    \end{itemize}
-    % \alert{\textbf{PhenoGraph}}  
-  \end{center}
-\end{frame}
-
-%--------------------------------------------------------------------------%
-
-
-\section{PhenoGraph}
-
-\begin{frame}{PhenoGraph}
-  \alert{Aprendizaje no supervisado:}
-  Agrupa $N$ células individuales en subpoblaciones (clústers) que representan los fenotipos
-  presentes en la muestra.
-  \begin{itemize}
-    \item Input: matriz $N$x$D$.
-    \item Busca regiones densas en el espacio $D$-dimensional $\rightarrow$ grafo.
-    \item Busca comunidades en el grafo.
-    \item Output: index asignando cada célula a una subpoblación.
-  \end{itemize}
-  \vskip-0.5em
-  \includegraphics[scale=.72]{images/gr1_lrg_C.jpg}
-
-\end{frame}
-
-%--------------------------------------------------------------------------%
-
-\subsection{1. Construcción del grafo}
-
-\begin{frame}{Construcción del grafo: kNN}
-  \vskip1em
-  \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
-    \textbf{Paso 1: $k$-Nearest-Neighbors}
-  \end{beamercolorbox}
-  \vskip-0.2cm
-  \begin{itemize}
-    \item $k$ vecinos más cercanos para cada célula con distancia Euclidea.
-    \item Si $k$ es bajo, baja conectividad entre las poblaciones.
-    \item Si $k$ es alto, resolución de poblaciones pequeñas se pierde.
-    \item $N$-células con $k$-vecinos: $N$ agrupaciones.
-  \end{itemize}
-
-  \vskip0.5em
-  \begin{columns}
-    \hskip1.3em
-    \begin{column}{0.5\textwidth}
-      % \centering
-      \includegraphics[scale=.9]{images/k5_knn.jpg}
-    \end{column}
-    \hskip-1.3em
-    \begin{column}{0.5\textwidth}
-      % \centering
-      \vskip-0.4mm
-      \includegraphics[scale=.9]{images/k10_knn.jpg}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-%--------------------------------------------------------------------------%
-
-\begin{frame}{Construcción del grafo: Coeficiente de similitud de Jaccard}
-  \vskip1em
-  \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
-    \textbf{Paso 2: Índice de Jaccard}
-  \end{beamercolorbox}
-  \vskip-0.2cm
-  \begin{itemize}
-    \item Redefinición de $k$-vecinos de cada célula definidos por $k$NN.
-    \item Índice de Jaccard: similitud entre dos conjuntos.
-  \end{itemize}
-
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \hskip8mm
-      \begin{equation*}
-        W_{i, j} = \frac{|v(i) \cap v(j)|}{|v(i) \cup v(j)|}
-      \end{equation*}
-    \end{column}
-    \begin{column}{0.5\textwidth}
-      \vskip0.2em
-      \hbox{\hspace{-0.5em}\includegraphics[scale=.2]{images/equation_jaccard_1.png}}
-    \end{column}
-  \end{columns}
-  % \metroset{block=fill}
-  \begin{textblock*}{5cm}(5.45cm,4.63cm)
-    \includegraphics[scale=0.04]{images/equal.jpg}
-  \end{textblock*}
-  \begin{alertblock}{Intuitivamente}
-    \begin{itemize}
-      \item La similitud entre células será máxima cuando sus $k$-vecinos son los
-            mismos $\rightarrow$ mismo fenotipo.
-      \item Similitud decaerá entre células que compartan menos vecinos conectados
-            $\rightarrow$ distinto fenotipo.
-    \end{itemize}
-  \end{alertblock}
-\end{frame}
-
-%--------------------------------------------------------------------------%
-
-\begin{frame}{Construcción del grafo: Coeficiente de similitud de Jaccard}
-  % \metroset{block=fill}
-  % \vskip-1em
-  \begin{alertblock}{Resultado}
-    \vskip0.20em
-    Grafo ponderado con pesos basados en el número de vecinos que comparten.
-  \end{alertblock}
-
-  \begin{alertblock}{Qué conseguimos}
-    \begin{itemize}
-      \item Incorporamos la estructura de la distribución de los datos al grafo a
-            través de los pesos.
-      \item Estructura compacta y rica en información que captura la similitud entre células.
-    \end{itemize}
-  \end{alertblock}
-  \begin{columns}
-    \begin{column}{0.6\textwidth}
-      \vskip-5em
-      \hskip-3cm
-      \begin{itemize}
-        \item Se refuerzan ejes en zonas densas.
-        \item Se penalizan ejes en zonas dispersas.
-        \item Poblaciones raras son mejor resueltas.
-        \item Outliers tienden a ser excluídos.
-      \end{itemize}
-    \end{column}
-    \begin{column}{0.46\textwidth}
-      \vskip-0.5em
-      \includegraphics[scale=0.9]{images/figs1_lrg_D.jpg}
-    \end{column}
-  \end{columns}
-\end{frame}
-
-
-\begin{frame}{Partición del grafo en comunidades}
-  \vskip0.2em
-  \begin{alertblock}{Comunidad}
-    \vskip0.5mm
-    Presencia de grupos de nodos que están
-    más densamente conectados entre sí que con otros nodos.
-  \end{alertblock}
-
-  \begin{columns}
-    \begin{column}{0.4\textwidth}
-      \vskip0.3cm
-      \includegraphics[scale=0.29]{images/community_graph_2.png}
-    \end{column}
-    \begin{column}{0.6\textwidth}
-      \vspace{-3em}
-      \begin{itemize}
-        \item Los grafos resultantes tienen esta propiedad por cómo se han construido y
-              por el tipo de datos de los que proceden.
-        \item Las comunidades representan células fenotípicamente similares.
-      \end{itemize}
-    \end{column}
-  \end{columns}
-  \vskip0.5em
-  \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
-    Cómo encontramos las comunidades.
-  \end{beamercolorbox}
-  \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
-    Cómo dividimos el grafo de forma óptima.
-  \end{beamercolorbox}
-\end{frame}
-
-
-\subsection{2. Partición del grafo en comunidades}
-
-\begin{frame}{Partición del grafo en comunidades: Modularidad}
-  \begin{overlayarea}{\linewidth}{1\textheight}
-    % \vskip0.2em
-    \begin{alertblock}{Modularidad ($Q$)}
-      \vskip0.5mm
-      Medida de la calidad de una división particular de una red.
-      Puede ser utilizada como función objetivo a maximizar por
-      los algoritmos de detección de comunidades.
-    \end{alertblock}
-
-    % \vskip-1em
-    \only<1>{
-      \begin{equation*}
-        Q = \frac{1}{2m} \sum_{i,j}\left[W_{i,j} - \frac{s_i s_j}{2m}\right]\delta(c_i,c_j)
-      \end{equation*}
-      % \vskip-1em
-    }
-
-    \only<2>{
-      \vskip1em
-      \centering
-      \hspace{1.6em}
-      \includegraphics[scale=0.13]{images/equation_good.png}
-    }
-    \only<1>{
-      \vskip0.5em
-      \begin{itemize}
-        \item $W_{i,j}$: peso del eje entre los nodos $i$ y $j$.
-        \item $s_i$: suma de los pesos de los ejes que involucran al nodo $i$.
-        \item $c_i$: asignación de la comunidad para el nodo $i$.
-        \item $\delta(u,v)$: función delta de Kronecker: 1 si $u = v$, 0 si $u \neq v$.
-        \item $m = \frac{1}{2} \sum W_{i,j}$: peso total de la red.
-      \end{itemize}
-    }
-    \only<2>{
-      \begin{alertblock}{Intuitivamente}
-        \begin{itemize}
-          \item Solo se calcula para pares de nodos de la misma comunidad.
-          \item Cuando $W_{i,j}$ es mayor, la modularidad es más alta.
-          \item Cuando $\frac{s_i s_j}{2m}$ es mayor, la modularidad baja.
-        \end{itemize}
-      \end{alertblock}
-    }
-  \end{overlayarea}
-\end{frame}
-
-\begin{frame}{Partición del grafo en comunidades: Modularidad}
-  \vskip1em
-  \hbox{\hspace{-0.5em}\includegraphics[scale=0.95]{images/louvain_example.jpg}}
-  \vskip1em
-  \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
-    Búsqueda óptima: Problema de optimización combinatorial \textbf{NP-completo}.
-  \end{beamercolorbox}
-  \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
-    Necesitamos algoritmos heurísitcos: \textbf{Método de Louvain}.
-  \end{beamercolorbox}
-\end{frame}
-
-
-\begin{frame}{Partición del grafo en comunidades: Método de Louvain}
-  % \vskip-9em
-  \vskip0.2em
-  Aproximación heurística con dos fases repetidas iterativamente:
-  \Fonteight
-  \begin{alertblock}{Primera fase}
-    \begin{enumerate}[<+-| alert@+>]
-      \item Se asigna una comunidad a cada nodo ($N$ comunidades).
-      \item Cada nodo $i$ se asgina a la de cada vecino $j$ y
-            se calcula $\Delta Q$.
-      \item Si $\Delta Q$ resultante es positiva, se asigna $i$ a dicha comunidad.
-    \end{enumerate}
-  \end{alertblock}
-  \begin{alertblock}{Segunda fase}<4->
-    \vskip-0.2mm
-    \begin{enumerate}[<+-| alert@+>]
-      \item Se construye una nueva red con las comunidades obtenidas anteriormente
-            como nodos.
-      \item Los pesos se computan como la suma de los pesos de cada comunidad.
-
-    \end{enumerate}
-  \end{alertblock}
-  \centering
-  \vskip-1em
-  % \begin{textblock*}{1cm}(3.3cm,5.8cm)
-  % \includegraphics[scale=0.18]{images/louvine_method.png}
-  \includegraphics<1,2,3>[scale=0.18]{images/louvine_method_3.png}
-  \includegraphics<4,5>[scale=0.18]{images/louvine_method_4.png}
-  \includegraphics<6>[scale=0.18]{images/louvine_method_5.png}
-  % \end{textblock*}
-
-\end{frame}
-
-
-
-\begin{frame}{Pseudocódigo}
-  \vskip-0.5em
-  \textbf{Input:} data set of single-cell measurements $X = \{x1, .., xN\}$\\
-  \textbf{Output:} subpopulation index assigning each cell in X to one of M groups\\
-  \vskip2em
-  \begin{beamercolorbox}[sep=0.2cm]{coloredboxstuff}
-    \Fontvi
-    \textbf{Inicialización:}\\
-    \hspace{0.5cm}\texttt{for each cell $x_i$}\\
-    \hspace{1.5cm}\texttt{find the indices ν(i) of the k nearest cells}\\
-    \textbf{Construcción del grafo:}\\
-    \hspace{0.5cm}\texttt{set of vertices $V = \{v_1 , ..., v_N\}$ to each cell in $X$}\\
-    \hspace{0.5cm}\texttt{set of edges $E = \{\}$}\\
-    \hspace{0.5cm}\texttt{for each pair of cells $x_i$ and $x_j$}\\
-    \hspace{1.5cm}\texttt{compute $W_{ij}$}\\
-    \hspace{1.5cm}\texttt{if $W_{ij} > 0$, add $e_{ij}$ = $W_{ij}$ to E}\\
-    \hspace{0.5cm}\texttt{return $G = (V, E)$}\\
-    \textbf{Detección de comunidades:}\\
-    \hspace{0.5cm}\texttt{for t in \{1, ..., 100\}}\\
-    \hspace{1.5cm}\texttt{decompose $G$ into $C_t$ by Louvain Method}\\
-    \hspace{1.5cm}\texttt{determine best $C_t$ by maximum $Q$}\\
-    \hspace{0.5cm}\texttt{return $C = C_t$}
-  \end{beamercolorbox}
-\end{frame}
-
-
-
-\begin{frame}{Validación en células inmunes de adulto sano}
-  \begin{overlayarea}{\linewidth}{1\textheight}
-    \vskip1em
-    \begin{itemize}
-      \item Datos públicos: 30.000 células de médula ósea asignadas manualmente
-            mediante técnicas estándar.
-      \item Mayor precisión y escalabilidad que otros métodos.
-      \item Robusto con diferentes parámetros.
-    \end{itemize}
-    \vskip1.5em
-    \centering
-    \includegraphics<1>[scale=0.7]{images/gr2_lrg_A.jpg}
-    \vskip-1em
-    \includegraphics<2>[scale=0.7]{images/histogram_performance.jpg}
-    \includegraphics<3>[scale=0.8]{images/computation_time_comparison.jpg}
-  \end{overlayarea}
-\end{frame}
-
-
-
-\section{Resultados}
-
-\begin{frame}{Resultados: Datos}
+  \tikzstyle{format} = [draw=Orange, line width=0.25mm, thin, fill=OrangeBackground, rounded corners=0.25ex, align=center]
+  \tikzstyle{medium} = [ellipse, draw=BlueBorder, thin, fill=BlueBackground, minimum height=2.5em, align=center]
   \begin{figure}
     \centering
-    % \hskip-1em
-    \includegraphics[scale=0.75]{images/gr1_lrg_A.jpg}
+    \begin{tikzpicture}[node distance=0.7cm,>=latex', inner sep = 4pt, auto,>=latex', thick, scale=0.8, every node/.style={scale=0.8}]
+      \path[->] node[format] (align) {Estimación parámetros modelo\\ZINB-WaVE y simulación de nuevos\\perfiles \textit{single-cell}};
+      \path[->] node[format, right = of align] (filt) {Generación matrices de\\ composición celular\\y simulación perfiles \textit{bulk}}
+      (align) edge node {} (filt);
+      \path[->] node[format, right = of filt] (dim) {Entrenamiento de la \\Red Neuronal Profunda\\ y evaluación}
+      (filt) edge node {} (dim);
+    \end{tikzpicture}
   \end{figure}
+
+  Dos modelos de deconvolución a diferente nivel de resolución. Aplicación sobre muestras reales:
+
   \begin{itemize}
-    \item \textbf{21 individuos:} 16 pacientes con AML, 5 adultos donantes sanos.
-    \item \textbf{31 dimensiones:} \alert{16 marcadores de superficie más informativos} y 14
-          sondas contra proteínas importantes en señalización intracelular.
+    \item Modelo específico: 13 tipos celulares $\rightarrow$ mayor resolución aunque mayor probabilidad de error.
+    \item Modelo genérico: 7 tipos celulares $\rightarrow$ menor resolución aunque menor probabilidad de error.
   \end{itemize}
 \end{frame}
 
+\begin{frame}{Estimación parámetros ZINB-WaVE y simulación de nuevas células}
+  \begin{figure}
+    \centering
+    \includegraphics[width = 12cm]{images/simulSingleCell.png}
+  \end{figure}
+\end{frame}
 
-\begin{frame}{Resultados: PhenoGraph sobre set de datos AML}
-  \begin{itemize}
-    \item PhenoGraph sobre la cohorte de pacientes AML y donantes sanos ($k$ = 50).
-    \item 28 subpoblaciones / muestra.
-  \end{itemize}
-  \centering
-  \vskip-0.5em
-  \includegraphics[scale=0.75]{images/patients_markers.jpg}
+\begin{frame}{Matrices de composición celular y modelos}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \vskip-1mm
+      \begin{figure}
+        \includegraphics[width=6.7cm]{images/boxplotsFinal.png}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{alertblock}{Modelos construidos (datos entrenamiento)}
+        \begin{enumerate}
+          \item Modelo específico 1 $\rightarrow$ solo \textit{bulk}: 18.451 muestras.
+          \item Modelo específico 2 $\rightarrow$ solo \textit{single-cell}: 8.992 células.
+          \item Modelo específico 3 $\rightarrow$ solo \textit{bulk} + \textit{single-cell}: 18.451 muestras y 8.992 células.
+          \item Modelo genérico: solo \textit{bulk} $\rightarrow$ 18.451 muestras.
+        \end{enumerate}
+      \end{alertblock}
+    \end{column}
+  \end{columns}
 \end{frame}
 
 
+\begin{frame}[fragile]{Entrenamiento de la Red Neuronal Profunda}
 
-\begin{frame}{Resultados: PhenoGraph sobre subpoblaciones AML}
+  25 épocas en modelos específicos y 20 épocas en genérico. El resto de parámetros son los establecidos en \texttt{trainDigitalDLSorterModel} por defecto.
+
+  \Fontvi{
+    \begin{table}[th]
+      \begin{center}
+        \begin{tabular}{rcccccc}
+          \toprule
+          \multirow{2}{*}{}                                                                         &
+          \multicolumn{2}{c}{\textbf{KLD}}                                                          &
+          \multicolumn{2}{c}{\textbf{Precisión}}                                                    &
+          \multicolumn{2}{c}{\textbf{MAE}}                                                                                                                   \\
+          Conjunto de datos                                                                         & {Entr.} & {Test} & {Entr.} & {Test} & {Entr.} & {Test} \\
+          \midrule
+          \rowcolor<3>{OrangeBackground} \textbf{Modelo específico 1 (\textit{bulk})}               & 0,0515  & 0,0751 & 0,7442  & 0,885  & 0,015   & 0,014  \\
+          \rowcolor<2>{OrangeBackground} \textbf{Modelo específico 2 (\textit{sc})}                 & 0,0289  & 0,5718 & 1       & 0,6131 & 7,6197  & 0,0465 \\
+          \rowcolor<3>{OrangeBackground} \textbf{Modelo específico 3 (\textit{bulk} + \textit{sc})} & 0,0445  & 0,0385 & 0,7953  & 0,8101 & 0,0123  & 0,0112 \\
+          \rowcolor<4>{OrangeBackground} \textbf{Modelo genérico (\textit{bulk})}                   & 0,0222  & 0,0154 & 0,9051  & 0,9629 & 0,0186  & 0,0112 \\
+          \bottomrule
+        \end{tabular}
+      \end{center}
+    \end{table}
+  }
   \begin{itemize}
-    \item PhenoGraph sobre subpoblaciones AML ($k$ = 15).
-    \item Cada subpoblación definida por centroides: matriz 425 x 16.
+    \item \alert<2>{Modelo específico 2 con los peores resultados, gran sobreajuste $\rightarrow$ necesidad de incluir muestras \textit{bulk}.}
+    \item \alert<3>{Modelo específico 3 superior al Modelo específico 1 $\rightarrow$ necesaria una comparativa más profunda.}
+    \item \alert<4>{Modelo genérico con las mejores puntuaciones $\rightarrow$ problema más sencillo.}
   \end{itemize}
-  \centering
-  \includegraphics[scale=0.52]{images/AML_subpoblations.jpg}
+
 \end{frame}
 
 
-\begin{frame}{Resultados: Cross-validación}
-  \begin{alertblock}{Resampleo de subpoblaciones AML}
-    \Fontvi
-    \begin{itemize}
-      \item 16 repeticiones aleatorias de todos los datos.
-      \item 1 paciente fuera: 16 sets de datos.
-      \item 2 pacientes fuera: 120 sets de datos.
+\begin{frame}{Evaluación del desempeño de la deconvolución: modelos específicos}
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=7cm]{images/modelo_especifico_2_2.png}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      % \begin{textblock*}{3cm}(12cm,2cm)
+      \Fonteight{
+        \begin{alertblock}{Resultados}
+          \begin{itemize}
+            \item Modelo específico 2: peores resultados $\rightarrow$ $R$ = 0,65 y CCC = 0,614
+            \item Modelos específicos 1 y 3: similares, ligeramente superior el 1.
+          \end{itemize}
+        \end{alertblock}
+      }
+      % \end{textblock*}
+    \end{column}
+  \end{columns}
+
+  \begin{columns}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=7cm]{images/modelo_especifico_1.png}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.01\textwidth}
+      \begin{figure}
+        \includegraphics[width=0.5cm]{images/approx.png}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{figure}
+        \includegraphics[width=7cm]{images/modelo_especifico_3_1mod.png}
+      \end{figure}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+\begin{frame}{Modelo específico 1 vs Modelo específico 3}
+  \begin{overlayarea}{\linewidth}{1\textheight}
+    \begin{figure}
+      \centering
+      \only<1>{\includegraphics[width=12cm]{images/sinFiltrarSC_2_1.png}}
+      \only<2>{\includegraphics[width=12cm]{images/filtradoSC_2.png}}
+    \end{figure}
+    \vskip-1.2em
+    \begin{itemize}[<alert@+>]
+      \item Modelo entrenado con \textit{single-cell} + \textit{bulk} $\rightarrow$ superior sin filtrar perfiles \textit{single-cell}.
+      \item Modelo entrenado solo con \textit{bulk} $\rightarrow$ superior retirando los perfiles \textit{single-cell}.
     \end{itemize}
-  \end{alertblock}
-  \vskip-0.5em
-  \centering
-  \includegraphics[scale=0.8]{images/NMI_comparison.jpg}
-  \vskip0.5em
+  \end{overlayarea}
+\end{frame}
+
+\begin{frame}{Modelo específico 1}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{figure}
+        \includegraphics[width=9cm]{images/modelo1Corr.png}
+      \end{figure}
+    \end{column}
+    \begin{column}{0.4\textwidth}
+      \begin{itemize}
+        \item Niveles de correlación cercanos a 0,99 tanto en $R$ como en CCC.
+        \item Errores mayores en tipos celulares tumorales y BGC.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+
   \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
-    Metaclústeres AML son robustos frente a cambios en el dataset.
+    Buen desempeño general en todos los tipos celulares.
   \end{beamercolorbox}
 \end{frame}
 
+\begin{frame}{Modelo genérico}
 
-\section{Otros métodos}
+  \begin{figure}
+    \includegraphics[width=12cm]{images/modeloGenerico_2_cut.png}
+  \end{figure}
 
-\begin{frame}{Comparación con otros métodos}
-  % \begin{alertblock}{Papers}
-  %   % \Fontvi
-  %   \begin{itemize}
-  %     \item A comparison framework and guideline of clustering methods
-  %     for mass cytometry data.
-  %     \item Comparison of clustering methods for high‐dimensional 
-  %     single‐cell flow and mass cytometry data.
-  %   \end{itemize}
-  % \end{alertblock}
+  \vskip-2mm
 
-  \makebox(328,90)[rt]{\includegraphics[scale=0.2]{images/table_methods.png}}
+  \begin{itemize}
+    \item Mismas tendencias que las observadas en el modelo específico.
+    \item Errores menores en general.
+  \end{itemize}
 
 
+  \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
+    Buen desempeño general en todos los tipos celulares.
+  \end{beamercolorbox}
+\end{frame}
 
-  \begin{alertblock}{Conclusiones}
+\begin{frame}{Modelos de deconvolución sobre datos \textit{bulk} reales}
+  Datos \textit{bulk RNA-seq} de cáncer de mama procedentes del proyecto TCGA (\textit{The Cancer Genome
+    Atlas}): 1222 muestras.
+  \Fontvi
+  \begin{alertblock}{Problema}
+    \vskip1mm
     \begin{itemize}
-      \item Robusto frente a cambio de parámetros y remuestreo.
-      \item Preciso y escalable.
-      \item Primeras posiciones junto a FlowSOM, flowMeans y DEPECHE.
+      \item No se tienen las proporciones celulares de las muestras.
+      \item \alert<2>{Análisis de correlación entre las proporciones predichas.}
     \end{itemize}
   \end{alertblock}
-  \begin{alertblock}{Implementación}
-    \vskip0.25em
-    MATLAB, Python, R, paquetes de análisis scRNAseq (Seurat).
+
+
+  \begin{alertblock}{Se espera}
+    \vskip1mm
+    Tipos pro-tumorales correlacionen positivamente con proporciones tumorales:
+    \begin{itemize}
+      \item Linfocitos T reguladores
+      \item Macrófagos.
+    \end{itemize}
+
+    Tipos anti-tumorales correlacionen negativamente con proporciones tumorales:
+    \begin{itemize}
+      \item Células B de memoria.
+      \item Linfocitos T CD8+.
+    \end{itemize}
   \end{alertblock}
 
 \end{frame}
+
+\begin{frame}{Modelo específico sobre datos TCGA}
+  \begin{columns}
+    \begin{column}{0.55\textwidth}
+      \begin{overlayarea}{\linewidth}{1\textheight}
+        \begin{figure}
+          \centering
+          \only<1>{\includegraphics[width=7.5cm]{images/totalEspecifico.png}}
+          \only<2>{\includegraphics[width=7.5cm]{images/especificoSimplificadoSetTumor.png}}
+        \end{figure}
+      \end{overlayarea}
+    \end{column}
+
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Lincofitos T CD8+ y linfocitos B de memoria $\rightarrow$ anticorrelacionan con 3 de los 4 subtipos de cáncer.
+        \item Linfocitos T CD4+ reguladores: correlacionan positivamente con 3 de los 4 subtipos de cáncer.
+      \end{itemize}
+      \begin{alertblock}{Problema}
+        \vskip0.1mm
+        ER+/HER2+ no es predicho según lo esperado. $\rightarrow$ proporciones medias de 1,14\%.
+      \end{alertblock}
+      \begin{alertblock}{Solución}
+        \vskip0.1mm
+        Uso del argumento \texttt{simplify.set} agrupando los 4 subtipos intrínsecos de cáncer bajo la etiqueta 'Tumor'.
+      \end{alertblock}
+    \end{column}
+  \end{columns}
+
+
+\end{frame}
+
+
+\begin{frame}{Modelo genérico sobre datos TCGA}
+  \begin{columns}
+    \begin{column}{0.6\textwidth}
+      \begin{figure}
+        \centering
+        \vskip-0.5em
+        \includegraphics[width=8cm]{images/genericoTotal.png}
+      \end{figure}    
+    \end{column}
+    \begin{column}{0.5\textwidth}
+      \begin{itemize}
+        \item Mismas tendencias
+        \begin{itemize}
+          \item Lincofitos T CD8+ y linfocitos B de memoria $\rightarrow$ anticorrelacionan con la proporción tumoral.
+          \item Linfocitos T CD4+ reguladores: correlacionan positivamente con la proporción tumoral.
+        \end{itemize}
+        \item Consenso entre ambos modelos excepto en las células dendríticas: posible problema en los datos de entrenamiento.
+      \end{itemize}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% CONCLUSIONES %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section[Conclusiones y trabajo futuro]{Conclusiones y trabajo futuro}
+
+\begin{frame}{digitalDLSorter como método de deconvolución}
+  \begin{alertblock}{Resultados obtenidos}
+    
+  \end{alertblock}
+
+  \begin{alertblock}{Limitaciones y trabajo futuro}
+    
+  \end{alertblock}
+  
+\end{frame}
+
+
+\begin{frame}{digitalDLSorteR como paquete de R}
+  \begin{alertblock}{Aportaciones}
+    
+  \end{alertblock}
+
+  \begin{alertblock}{Limitaciones y trabajo futuro}
+    
+  \end{alertblock}
+  
+\end{frame}
+
+
+
+
+%--------------------------------------------------------------------------%
 
 
 \begin{frame}{Referencias}

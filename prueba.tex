@@ -1,0 +1,23 @@
+\documentclass{beamer}
+\usepackage{lmodern,amsmath,amssymb}
+\usepackage[customcolors,beamer]{hf-tikz}
+
+\usetheme{Copenhagen}
+
+\hfsetfillcolor{blue!10}
+\hfsetbordercolor{blue}
+
+\begin{document}
+
+    \section{Mysection}
+    \subsection{A subsection}
+    \begin{frame}{The equations}
+        \begin{block}{}
+            \begin{align}
+                \tikzmarkin<1>{a}a_i\tikzmarkend{a} + b_j = 10 & \forall i\in I, j\in J \\
+                \tikzmarkin<2>{c}c_j + d_j + \tikzmarkin<1>{b}a_i\tikzmarkend{b} >= 30 & \forall i\in I, j\in J\tikzmarkend{c}
+            \end{align}
+        \end{block}
+    \end{frame}
+
+\end{document}

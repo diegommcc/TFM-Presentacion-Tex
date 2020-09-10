@@ -10,5 +10,8 @@ DDLSChungSmall <- generateTrainAndTestBulkProbMatrix(
   object = DDLSChungSmall,
   cell.type.column = "Cell_type",
   prob.design = probMatrix,
-  n.bulk.samples = 200 # 30000 in real situations
+  proportions.train = c(10, 5, 20, 15, 10, 40),
+  proportions.test = c(10, 5, 20, 15, 10, 40),
+  n.cells = 100,
+  n.bulk.samples = 31000
 )

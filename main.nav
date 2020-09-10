@@ -7,30 +7,24 @@
 \headcommand {\sectionentry {1}{Introducción y contexto}{3}{Introducción y contexto}{0}}
 \headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\beamer@subsectionpages {3}{3}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{4}{1.1. Cáncer y heterogeneidad celular}}
-\headcommand {\slideentry {1}{1}{1}{4/6}{1.1. Cáncer y heterogeneidad celular}{0}}
+\headcommand {\slideentry {1}{0}{2}{4/6}{}{0}}
 \headcommand {\beamer@framepages {4}{6}}
-\headcommand {\slideentry {1}{1}{2}{7/7}{1.1. Cáncer y heterogeneidad celular}{0}}
+\headcommand {\slideentry {1}{0}{3}{7/7}{}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {1}{1}{3}{8/8}{1.1. Cáncer y heterogeneidad celular}{0}}
+\headcommand {\slideentry {1}{0}{4}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsectionpages {4}{8}}
-\headcommand {\beamer@subsectionentry {0}{1}{2}{9}{1.2. Tecnologías para explorar la heterogeneidad celular: \textit {scRNA-seq}}}
-\headcommand {\slideentry {1}{2}{1}{9/9}{1.2. Tecnologías para explorar la heterogeneidad celular: \textit {scRNA-seq}}{0}}
+\headcommand {\slideentry {1}{0}{5}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\slideentry {1}{2}{2}{10/13}{1.2. Tecnologías para explorar la heterogeneidad celular: \textit {scRNA-seq}}{0}}
+\headcommand {\slideentry {1}{0}{6}{10/13}{}{0}}
 \headcommand {\beamer@framepages {10}{13}}
-\headcommand {\beamer@subsectionpages {9}{13}}
-\headcommand {\beamer@subsectionentry {0}{1}{3}{14}{1.3. Métodos de deconvolución de muestras \textit {bulk RNA-seq}}}
-\headcommand {\slideentry {1}{3}{1}{14/14}{1.3. Métodos de deconvolución de muestras \textit {bulk RNA-seq}}{0}}
+\headcommand {\slideentry {1}{0}{7}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {1}{3}{2}{15/18}{1.3. Métodos de deconvolución de muestras \textit {bulk RNA-seq}}{0}}
+\headcommand {\slideentry {1}{0}{8}{15/18}{}{0}}
 \headcommand {\beamer@framepages {15}{18}}
-\headcommand {\slideentry {1}{3}{3}{19/19}{1.3. Métodos de deconvolución de muestras \textit {bulk RNA-seq}}{0}}
+\headcommand {\slideentry {1}{0}{9}{19/19}{}{0}}
 \headcommand {\beamer@framepages {19}{19}}
 \headcommand {\beamer@sectionpages {3}{19}}
-\headcommand {\beamer@subsectionpages {14}{19}}
+\headcommand {\beamer@subsectionpages {3}{19}}
 \headcommand {\sectionentry {2}{Objetivos}{20}{Objetivos}{0}}
 \headcommand {\slideentry {2}{0}{1}{20/20}{}{0}}
 \headcommand {\beamer@framepages {20}{20}}
@@ -41,91 +35,107 @@
 \headcommand {\sectionentry {3}{digitalDLSorteR: transformación de la \textit {pipeline} en paquete de R}{32}{digitalDLSorteR: transformación de la \textit {pipeline} en paquete de R}{0}}
 \headcommand {\slideentry {3}{0}{1}{32/32}{}{0}}
 \headcommand {\beamer@framepages {32}{32}}
-\headcommand {\beamer@subsectionpages {32}{32}}
-\headcommand {\beamer@subsectionentry {0}{3}{1}{33}{2.1. Fundamento del método}}
-\headcommand {\slideentry {3}{1}{1}{33/37}{2.1. Fundamento del método}{0}}
+\headcommand {\slideentry {3}{0}{2}{33/37}{}{0}}
 \headcommand {\beamer@framepages {33}{37}}
-\headcommand {\beamer@subsectionpages {33}{37}}
-\headcommand {\beamer@subsectionentry {0}{3}{2}{38}{2.1. digitalDLSorteR: flujo de trabajo}}
-\headcommand {\slideentry {3}{2}{1}{38/38}{2.1. digitalDLSorteR: flujo de trabajo}{0}}
+\headcommand {\slideentry {3}{0}{3}{38/38}{}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {3}{2}{2}{39/39}{2.1. digitalDLSorteR: flujo de trabajo}{0}}
+\headcommand {\slideentry {3}{0}{4}{39/39}{}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {3}{2}{3}{40/40}{2.1. digitalDLSorteR: flujo de trabajo}{0}}
+\headcommand {\slideentry {3}{0}{5}{40/40}{}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\slideentry {3}{2}{4}{41/41}{2.1. digitalDLSorteR: flujo de trabajo}{0}}
+\headcommand {\slideentry {3}{0}{6}{41/41}{}{0}}
 \headcommand {\beamer@framepages {41}{41}}
-\headcommand {\slideentry {3}{2}{5}{42/42}{2.1. digitalDLSorteR: flujo de trabajo}{0}}
+\headcommand {\slideentry {3}{0}{7}{42/42}{}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {3}{2}{6}{43/43}{2.1. digitalDLSorteR: flujo de trabajo}{0}}
-\headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {3}{2}{7}{44/45}{2.1. digitalDLSorteR: flujo de trabajo}{0}}
-\headcommand {\beamer@framepages {44}{45}}
-\headcommand {\beamer@sectionpages {32}{45}}
-\headcommand {\beamer@subsectionpages {38}{45}}
-\headcommand {\sectionentry {4}{PhenoGraph}{46}{PhenoGraph}{0}}
-\headcommand {\slideentry {4}{0}{1}{46/46}{}{0}}
+\headcommand {\slideentry {3}{0}{8}{43/45}{}{0}}
+\headcommand {\beamer@framepages {43}{45}}
+\headcommand {\slideentry {3}{0}{9}{46/46}{}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\slideentry {4}{0}{2}{47/47}{}{0}}
+\headcommand {\slideentry {3}{0}{10}{47/47}{}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\beamer@subsectionpages {46}{47}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{48}{1. Construcción del grafo}}
-\headcommand {\slideentry {4}{1}{1}{48/48}{1. Construcción del grafo}{0}}
+\headcommand {\slideentry {3}{0}{11}{48/48}{}{0}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\slideentry {4}{1}{2}{49/49}{1. Construcción del grafo}{0}}
+\headcommand {\slideentry {3}{0}{12}{49/49}{}{0}}
 \headcommand {\beamer@framepages {49}{49}}
-\headcommand {\slideentry {4}{1}{3}{50/50}{1. Construcción del grafo}{0}}
+\headcommand {\slideentry {3}{0}{13}{50/50}{}{0}}
 \headcommand {\beamer@framepages {50}{50}}
-\headcommand {\slideentry {4}{1}{4}{51/51}{1. Construcción del grafo}{0}}
+\headcommand {\slideentry {3}{0}{14}{51/51}{}{0}}
 \headcommand {\beamer@framepages {51}{51}}
-\headcommand {\beamer@subsectionpages {48}{51}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{52}{2. Partición del grafo en comunidades}}
-\headcommand {\slideentry {4}{2}{1}{52/53}{2. Partición del grafo en comunidades}{0}}
-\headcommand {\beamer@framepages {52}{53}}
-\headcommand {\slideentry {4}{2}{2}{54/54}{2. Partición del grafo en comunidades}{0}}
+\headcommand {\slideentry {3}{0}{15}{52/52}{}{0}}
+\headcommand {\beamer@framepages {52}{52}}
+\headcommand {\slideentry {3}{0}{16}{53/53}{}{0}}
+\headcommand {\beamer@framepages {53}{53}}
+\headcommand {\slideentry {3}{0}{17}{54/54}{}{0}}
 \headcommand {\beamer@framepages {54}{54}}
-\headcommand {\slideentry {4}{2}{3}{55/60}{2. Partición del grafo en comunidades}{0}}
-\headcommand {\beamer@framepages {55}{60}}
-\headcommand {\slideentry {4}{2}{4}{61/61}{2. Partición del grafo en comunidades}{0}}
+\headcommand {\slideentry {3}{0}{18}{55/55}{}{0}}
+\headcommand {\beamer@framepages {55}{55}}
+\headcommand {\beamer@sectionpages {32}{55}}
+\headcommand {\beamer@subsectionpages {32}{55}}
+\headcommand {\sectionentry {4}{Análisis de datos \textit {scRNA-seq}}{56}{Análisis de datos \textit {scRNA-seq}}{0}}
+\headcommand {\slideentry {4}{0}{1}{56/56}{}{0}}
+\headcommand {\beamer@framepages {56}{56}}
+\headcommand {\slideentry {4}{0}{2}{57/57}{}{0}}
+\headcommand {\beamer@framepages {57}{57}}
+\headcommand {\slideentry {4}{0}{3}{58/58}{}{0}}
+\headcommand {\beamer@framepages {58}{58}}
+\headcommand {\slideentry {4}{0}{4}{59/59}{}{0}}
+\headcommand {\beamer@framepages {59}{59}}
+\headcommand {\slideentry {4}{0}{5}{60/60}{}{0}}
+\headcommand {\beamer@framepages {60}{60}}
+\headcommand {\slideentry {4}{0}{6}{61/61}{}{0}}
 \headcommand {\beamer@framepages {61}{61}}
-\headcommand {\slideentry {4}{2}{5}{62/64}{2. Partición del grafo en comunidades}{0}}
-\headcommand {\beamer@framepages {62}{64}}
-\headcommand {\beamer@sectionpages {46}{64}}
-\headcommand {\beamer@subsectionpages {52}{64}}
-\headcommand {\sectionentry {5}{Resultados}{65}{Resultados}{0}}
-\headcommand {\slideentry {5}{0}{1}{65/65}{}{0}}
+\headcommand {\beamer@sectionpages {56}{61}}
+\headcommand {\beamer@subsectionpages {56}{61}}
+\headcommand {\sectionentry {5}{Puesta en práctica de digitalDLSorteR: deconvolución muestras de cáncer de mama}{62}{Puesta en práctica de digitalDLSorteR: deconvolución muestras de cáncer de mama}{0}}
+\headcommand {\slideentry {5}{0}{1}{62/62}{}{0}}
+\headcommand {\beamer@framepages {62}{62}}
+\headcommand {\slideentry {5}{0}{2}{63/63}{}{0}}
+\headcommand {\beamer@framepages {63}{63}}
+\headcommand {\slideentry {5}{0}{3}{64/64}{}{0}}
+\headcommand {\beamer@framepages {64}{64}}
+\headcommand {\slideentry {5}{0}{4}{65/65}{}{0}}
 \headcommand {\beamer@framepages {65}{65}}
-\headcommand {\slideentry {5}{0}{2}{66/66}{}{0}}
-\headcommand {\beamer@framepages {66}{66}}
-\headcommand {\slideentry {5}{0}{3}{67/67}{}{0}}
-\headcommand {\beamer@framepages {67}{67}}
-\headcommand {\slideentry {5}{0}{4}{68/68}{}{0}}
-\headcommand {\beamer@framepages {68}{68}}
-\headcommand {\slideentry {5}{0}{5}{69/69}{}{0}}
-\headcommand {\beamer@framepages {69}{69}}
-\headcommand {\beamer@sectionpages {65}{69}}
-\headcommand {\beamer@subsectionpages {65}{69}}
-\headcommand {\sectionentry {6}{Otros métodos}{70}{Otros métodos}{0}}
-\headcommand {\slideentry {6}{0}{1}{70/70}{}{0}}
+\headcommand {\slideentry {5}{0}{5}{66/69}{}{0}}
+\headcommand {\beamer@framepages {66}{69}}
+\headcommand {\slideentry {5}{0}{6}{70/70}{}{0}}
 \headcommand {\beamer@framepages {70}{70}}
-\headcommand {\slideentry {6}{0}{2}{71/71}{}{0}}
-\headcommand {\beamer@framepages {71}{71}}
-\headcommand {\slideentry {6}{0}{3}{72/72}{}{0}}
-\headcommand {\beamer@framepages {72}{72}}
-\headcommand {\slideentry {6}{0}{4}{73/73}{}{0}}
+\headcommand {\slideentry {5}{0}{7}{71/72}{}{0}}
+\headcommand {\beamer@framepages {71}{72}}
+\headcommand {\slideentry {5}{0}{8}{73/73}{}{0}}
 \headcommand {\beamer@framepages {73}{73}}
-\headcommand {\gdef \insertmainframenumber {34}}
-\headcommand {\partentry {\translate {Appendix}}{1}}
-\headcommand {\beamer@partpages {1}{73}}
-\headcommand {\beamer@sectionpages {70}{73}}
-\headcommand {\beamer@subsectionpages {70}{73}}
-\headcommand {\beamer@appendixpages {74}}
-\headcommand {\slideentry {6}{0}{5}{74/74}{}{1}}
+\headcommand {\slideentry {5}{0}{9}{74/74}{}{0}}
 \headcommand {\beamer@framepages {74}{74}}
-\headcommand {\beamer@partpages {74}{74}}
-\headcommand {\beamer@subsectionpages {74}{74}}
-\headcommand {\beamer@sectionpages {74}{74}}
-\headcommand {\beamer@documentpages {74}}
+\headcommand {\slideentry {5}{0}{10}{75/76}{}{0}}
+\headcommand {\beamer@framepages {75}{76}}
+\headcommand {\slideentry {5}{0}{11}{77/78}{}{0}}
+\headcommand {\beamer@framepages {77}{78}}
+\headcommand {\slideentry {5}{0}{12}{79/79}{}{0}}
+\headcommand {\beamer@framepages {79}{79}}
+\headcommand {\beamer@sectionpages {62}{79}}
+\headcommand {\beamer@subsectionpages {62}{79}}
+\headcommand {\sectionentry {6}{Conclusiones y trabajo futuro}{80}{Conclusiones y trabajo futuro}{0}}
+\headcommand {\slideentry {6}{0}{1}{80/80}{}{0}}
+\headcommand {\beamer@framepages {80}{80}}
+\headcommand {\slideentry {6}{0}{2}{81/81}{}{0}}
+\headcommand {\beamer@framepages {81}{81}}
+\headcommand {\slideentry {6}{0}{3}{82/82}{}{0}}
+\headcommand {\beamer@framepages {82}{82}}
+\headcommand {\slideentry {6}{0}{4}{83/83}{}{0}}
+\headcommand {\beamer@framepages {83}{83}}
+\headcommand {\slideentry {6}{0}{5}{84/84}{}{0}}
+\headcommand {\beamer@framepages {84}{84}}
+\headcommand {\gdef \insertmainframenumber {46}}
+\headcommand {\partentry {\translate {Appendix}}{1}}
+\headcommand {\beamer@partpages {1}{84}}
+\headcommand {\beamer@sectionpages {80}{84}}
+\headcommand {\beamer@subsectionpages {80}{84}}
+\headcommand {\beamer@appendixpages {85}}
+\headcommand {\slideentry {6}{0}{6}{85/85}{}{1}}
+\headcommand {\beamer@framepages {85}{85}}
+\headcommand {\beamer@partpages {85}{85}}
+\headcommand {\beamer@subsectionpages {85}{85}}
+\headcommand {\beamer@sectionpages {85}{85}}
+\headcommand {\beamer@documentpages {85}}
 \headcommand {\gdef \inserttotalframenumber {1}}
-\headcommand {\gdef \inserttotalframenumber {34}}
+\headcommand {\gdef \inserttotalframenumber {46}}
 \headcommand {\gdef \appendixtotalframenumber {1}}

@@ -5,6 +5,7 @@ DDLSChungSmall <- generateBulkSamples(
   type.data = "both",
   file.backend = "DDLS_bulk.h5" # if NULL, works in-memory
 )
+
 ## preparing samples for training (train) and prediction (test)
 DDLSChungSmall <- prepareDataForTraining(
   object = DDLSChungSmall,

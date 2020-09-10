@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.5.7)  9 SEP 2020 03:01
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.5.7)  10 SEP 2020 16:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/home/diegommcc/Documentos/Máster Bioinformática UAM/TFM/TFM_presentación/Tex-Presentación/main.tex"
-(/home/diegommcc/Documentos/Máster Bioinformática UAM/TFM/TFM_presentación/Tex-Presentación/main.tex
+**"/home/diegommcc/Documentos/Máster Bioinformática UAM/TFM/TFM_presentación/TFM-Presentación-Tex/main.tex"
+(/home/diegommcc/Documentos/Máster Bioinformática UAM/TFM/TFM_presentación/TFM-Presentación-Tex/main.tex
 LaTeX2e <2020-02-02> patch level 2
 L3 programming layer <2020-02-14> (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamer.cls
 Document Class: beamer 2019/09/29 v3.57 A class for typesetting presentations
@@ -769,6 +769,20 @@ File: pgfcalendar.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgf@cal@easter@julianday=\count371
 ))) (/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+) (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen334
+\ar@mcellbox=\box85
+\extrarowheight=\dimen335
+\NC@list=\toks55
+\extratabsurround=\skip75
+\backup@length=\skip76
+\ar@cellbox=\box86
+)
+\everycr=\toks56
+\minrowclearance=\skip77
 ) (/usr/share/texmf/tex/latex/lm/lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
@@ -813,53 +827,177 @@ File: pgflibraryshadings.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \c@jumping=\count372
 ) (/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks55
-\SOUL@lasttoken=\toks56
-\SOUL@cmds=\toks57
-\SOUL@buffer=\toks58
-\SOUL@token=\toks59
-\SOUL@spaceskip=\skip75
-\SOUL@ttwidth=\dimen334
-\SOUL@uldp=\dimen335
-\SOUL@ulht=\dimen336
+\SOUL@word=\toks57
+\SOUL@lasttoken=\toks58
+\SOUL@cmds=\toks59
+\SOUL@buffer=\toks60
+\SOUL@token=\toks61
+\SOUL@spaceskip=\skip78
+\SOUL@ttwidth=\dimen336
+\SOUL@uldp=\dimen337
+\SOUL@ulht=\dimen338
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2019/09/10 1.8c listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2019/09/10 1.8c listings language file
+) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.callouts.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.callouts.code.tex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodepartlowerbox=\box87
+\pgfnodeparttwobox=\box88
+\pgfnodepartthreebox=\box89
+\pgfnodepartfourbox=\box90
+\pgfnodeparttwentybox=\box91
+\pgfnodepartnineteenbox=\box92
+\pgfnodeparteighteenbox=\box93
+\pgfnodepartseventeenbox=\box94
+\pgfnodepartsixteenbox=\box95
+\pgfnodepartfifteenbox=\box96
+\pgfnodepartfourteenbox=\box97
+\pgfnodepartthirteenbox=\box98
+\pgfnodeparttwelvebox=\box99
+\pgfnodepartelevenbox=\box100
+\pgfnodeparttenbox=\box101
+\pgfnodepartninebox=\box102
+\pgfnodeparteightbox=\box103
+\pgfnodepartsevenbox=\box104
+\pgfnodepartsixbox=\box105
+\pgfnodepartfivebox=\box106
+))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+ (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\arrowsize=\dimen339
+)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 )
-\blockbox=\box85
-Package hyperref Info: Option `colorlinks' set `true' on input line 152.
- (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/pgfplotsthemetol.sty
+\blockbox=\box107
+Package hyperref Info: Option `colorlinks' set `true' on input line 164.
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2019/12/09 v1.8y multicolumn formatting (FMi)
+\c@tracingmulticols=\count373
+\mult@box=\box108
+\multicol@leftmargin=\dimen340
+\c@unbalance=\count374
+\c@collectmore=\count375
+\doublecol@number=\count376
+\multicoltolerance=\count377
+\multicolpretolerance=\count378
+\full@width=\dimen341
+\page@free=\dimen342
+\premulticols=\dimen343
+\postmulticols=\dimen344
+\multicolsep=\skip79
+\multicolbaselineskip=\skip80
+\partial@page=\box109
+\last@line=\box110
+\maxbalancingoverflow=\dimen345
+\mult@rightbox=\box111
+\mult@grightbox=\box112
+\mult@gfirstbox=\box113
+\mult@firstbox=\box114
+\@tempa=\box115
+\@tempa=\box116
+\@tempa=\box117
+\@tempa=\box118
+\@tempa=\box119
+\@tempa=\box120
+\@tempa=\box121
+\@tempa=\box122
+\@tempa=\box123
+\@tempa=\box124
+\@tempa=\box125
+\@tempa=\box126
+\@tempa=\box127
+\@tempa=\box128
+\@tempa=\box129
+\@tempa=\box130
+\@tempa=\box131
+\@tempa=\box132
+\@tempa=\box133
+\@tempa=\box134
+\@tempa=\box135
+\@tempa=\box136
+\@tempa=\box137
+\@tempa=\box138
+\@tempa=\box139
+\@tempa=\box140
+\@tempa=\box141
+\@tempa=\box142
+\@tempa=\box143
+\@tempa=\box144
+\@tempa=\box145
+\@tempa=\box146
+\@tempa=\box147
+\@tempa=\box148
+\@tempa=\box149
+\@tempa=\box150
+\@tempa=\box151
+\c@minrows=\count379
+\c@columnbadness=\count380
+\c@finalcolumnbadness=\count381
+\last@try=\dimen346
+\multicolovershoot=\dimen347
+\multicolundershoot=\dimen348
+\mult@nat@firstbox=\box152
+\colbreak@box=\box153
+\mc@col@check@num=\count382
+) (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip81
+\multirow@cntb=\count383
+\multirow@dima=\skip82
+\bigstrutjot=\dimen349
+) (/usr/share/texlive/texmf-dist/tex/latex/beamertheme-metropolis/pgfplotsthemetol.sty
 Package: pgfplotsthemetol 2017/01/23 PGFplots colors based on Paul Tol's SRON technical note
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 176.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 176.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 203.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 203.
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 176.
-LaTeX Font Info:    ... okay on input line 176.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 203.
+LaTeX Font Info:    ... okay on input line 203.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -896,8 +1034,8 @@ LaTeX Font Info:    ... okay on input line 176.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box86
-Package hyperref Info: Link coloring ON on input line 176.
+\AtBeginShipoutBox=\box154
+Package hyperref Info: Link coloring ON on input line 203.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -905,61 +1043,61 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count373
+\c@section@level=\count384
 )
-LaTeX Info: Redefining \ref on input line 176.
-LaTeX Info: Redefining \pageref on input line 176.
-LaTeX Info: Redefining \nameref on input line 176.
+LaTeX Info: Redefining \ref on input line 203.
+LaTeX Info: Redefining \pageref on input line 203.
+LaTeX Info: Redefining \nameref on input line 203.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 176.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 203.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 176.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/b/n on input line 203.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 176.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 203.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 176.
+(Font)                  OT1/cmss/b/n --> OT1/lmss/b/n on input line 203.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmr/m/n on input line 176.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 176.
+(Font)                  OT1/lmss/m/n --> TU/lmr/m/n on input line 203.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 176.
+(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 176.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 176.
+(Font)                  OT1/lmr/bx/n --> TU/lmss/b/n on input line 203.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 176.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/m/n on input line 176.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 176.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/m/n on input line 203.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmss/m/it on input line 176.
+(Font)                  OT1/lmr/m/it --> TU/lmss/m/it on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> TU/lmss/m/it on input line 176.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 176.
+(Font)                  OT1/lmr/bx/it --> TU/lmss/m/it on input line 203.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 176.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 176.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 203.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 176.
+(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 203.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 176.
+(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/b/n --> TU/lmr/b/n on input line 176.
+(Font)                  OT1/lmss/b/n --> TU/lmr/b/n on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  TU/lmss/b/n --> TU/lmss/b/n on input line 176.
+(Font)                  TU/lmss/b/n --> TU/lmss/b/n on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 176.
+(Font)                  TU/lmss/m/n --> TU/lmss/b/n on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 176.
+(Font)                  TU/lmss/m/it --> TU/lmss/b/it on input line 203.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 176.
+(Font)                  TU/lmtt/m/n --> TU/lmtt/b/n on input line 203.
  (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texlive/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -975,20 +1113,20 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.16} (current compat level: 1.9).
 
-\c@lstlisting=\count374
+\c@lstlisting=\count385
 (./main.nav)
 File: images/eps_logo.png Graphic file (type bmp)
 <images/eps_logo.png>
 File: images/logo_uam_mod_hor.png Graphic file (type bmp)
 <images/logo_uam_mod_hor.png>
 
-Overfull \vbox (20.0pt too high) detected at line 178
+Overfull \vbox (20.0pt too high) detected at line 205
  []
 
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <14.4> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 178.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 205.
 
-Overfull \vbox (13.79993pt too high) detected at line 178
+Overfull \vbox (13.79993pt too high) detected at line 205
  []
 
 [1
@@ -996,47 +1134,43 @@ Overfull \vbox (13.79993pt too high) detected at line 178
 ] (./main.toc
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10> not available
 (Font)              Font shape `TU/lmss/m/sl' tried instead on input line 3.
-)
-Overfull \vbox (9.40845pt too high) detected at line 183
- []
-
-[2
+) [2
 
 ]
-LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 189.
+LaTeX Font Info:    Trying to load font information for OT1+lmss on input line 216.
  (/usr/share/texmf/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 189.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 216.
  (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 189.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 216.
  (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 189.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 216.
  (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 189.
+(Font)              <10> on input line 216.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 189.
+(Font)              <7> on input line 216.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 189.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 189.
+(Font)              <5> on input line 216.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 216.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 189.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 216.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <7> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 189.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 216.
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <5> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 189.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 216.
  [3
 
 ]
@@ -1057,7 +1191,7 @@ Overfull \hbox (95.08116pt too wide) in paragraph at lines 5--6
  []
 
 )
-Overfull \vbox (26.76398pt too high) detected at line 236
+Overfull \vbox (27.06398pt too high) detected at line 263
  []
 
 [4
@@ -1088,7 +1222,7 @@ Overfull \hbox (99.32104pt too wide) in paragraph at lines 11--12
 File: images/tumor_hallmarks_degradado_3.png Graphic file (type bmp)
 <images/tumor_hallmarks_degradado_3.png>
 )
-Overfull \vbox (26.76398pt too high) detected at line 236
+Overfull \vbox (27.06398pt too high) detected at line 263
  []
 
 [5
@@ -1119,7 +1253,7 @@ Overfull \hbox (99.32104pt too wide) in paragraph at lines 11--12
 File: images/tumor_hallmarks_degradado_2.png Graphic file (type bmp)
 <images/tumor_hallmarks_degradado_2.png>
 )
-Overfull \vbox (26.76398pt too high) detected at line 236
+Overfull \vbox (27.06398pt too high) detected at line 263
  []
 
 [6
@@ -1139,7 +1273,7 @@ LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <6> not available
 File: images/balance_Imm_2.png Graphic file (type bmp)
 <images/balance_Imm_2.png>
 )
-Overfull \vbox (5.8717pt too high) detected at line 264
+Overfull \vbox (6.1717pt too high) detected at line 291
  []
 
 [7
@@ -1151,7 +1285,7 @@ Overfull \vbox (5.8717pt too high) detected at line 264
 File: images/tabla_breast_2_mod.png Graphic file (type bmp)
 <images/tabla_breast_2_mod.png>
 )
-Overfull \vbox (17.74069pt too high) detected at line 302
+Overfull \vbox (18.0407pt too high) detected at line 329
  []
 
 [8
@@ -1174,14 +1308,14 @@ File: images/tumor_bw_arrow.png Graphic file (type bmp)
 File: images/tumor_color_arrow.png Graphic file (type bmp)
 <images/tumor_color_arrow.png>
 )
-Overfull \vbox (5.84319pt too high) detected at line 368
+Overfull \vbox (6.14319pt too high) detected at line 395
  []
 
 [9
 
 ]
 LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <12> not available
-(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 410.
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 437.
  [10
 
 ] [11
@@ -1189,7 +1323,7 @@ LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <12> not available
 ] [12
 
 ]
-Overfull \vbox (11.81282pt too high) detected at line 410
+Overfull \vbox (12.11282pt too high) detected at line 437
  []
 
 [13
@@ -1198,7 +1332,7 @@ Overfull \vbox (11.81282pt too high) detected at line 410
 File: images/deconvolution_workflow.png Graphic file (type bmp)
 <images/deconvolution_workflow.png>
 
-Overfull \vbox (6.64836pt too high) detected at line 425
+Overfull \vbox (6.94836pt too high) detected at line 452
  []
 
 [14
@@ -1207,7 +1341,7 @@ Overfull \vbox (6.64836pt too high) detected at line 425
 File: images/figure4.png Graphic file (type bmp)
 <images/figure4.png>
 
-Overfull \hbox (42.67912pt too wide) in paragraph at lines 506--506
+Overfull \hbox (42.67912pt too wide) in paragraph at lines 533--533
  [][] 
  []
 
@@ -1215,14 +1349,14 @@ Overfull \hbox (42.67912pt too wide) in paragraph at lines 506--506
 Package textpos Warning: environment textblock* not in vertical mode. 
 (textpos)                Environment textblock* should not have any text
 (textpos)                or printable material appearing before it.
-(textpos)                Alignment may work out wrongly. on input line 506.
+(textpos)                Alignment may work out wrongly. on input line 533.
 
 
-Overfull \vbox (5.97304pt too high) detected at line 506
+Overfull \vbox (5.97304pt too high) detected at line 533
  []
 
 
-Overfull \vbox (26.76398pt too high) detected at line 506
+Overfull \vbox (27.06398pt too high) detected at line 533
  []
 
 [15
@@ -1233,7 +1367,7 @@ File: images/ecuación01_mod_def_def_1.png Graphic file (type bmp)
 File: images/expression_deconv_1.png Graphic file (type bmp)
 <images/expression_deconv_1.png>
 
-Overfull \hbox (42.67912pt too wide) in paragraph at lines 506--506
+Overfull \hbox (42.67912pt too wide) in paragraph at lines 533--533
  [][] 
  []
 
@@ -1241,14 +1375,14 @@ Overfull \hbox (42.67912pt too wide) in paragraph at lines 506--506
 Package textpos Warning: environment textblock* not in vertical mode. 
 (textpos)                Environment textblock* should not have any text
 (textpos)                or printable material appearing before it.
-(textpos)                Alignment may work out wrongly. on input line 506.
+(textpos)                Alignment may work out wrongly. on input line 533.
 
 
-Overfull \vbox (6.02231pt too high) detected at line 506
+Overfull \vbox (6.02231pt too high) detected at line 533
  []
 
 
-Overfull \vbox (26.76398pt too high) detected at line 506
+Overfull \vbox (27.06398pt too high) detected at line 533
  []
 
 [16
@@ -1259,7 +1393,7 @@ File: images/ecuación01_mod_def_def_2.png Graphic file (type bmp)
 File: images/expression_deconv_2.png Graphic file (type bmp)
 <images/expression_deconv_2.png>
 
-Overfull \hbox (42.67912pt too wide) in paragraph at lines 506--506
+Overfull \hbox (42.67912pt too wide) in paragraph at lines 533--533
  [][] 
  []
 
@@ -1267,14 +1401,14 @@ Overfull \hbox (42.67912pt too wide) in paragraph at lines 506--506
 Package textpos Warning: environment textblock* not in vertical mode. 
 (textpos)                Environment textblock* should not have any text
 (textpos)                or printable material appearing before it.
-(textpos)                Alignment may work out wrongly. on input line 506.
+(textpos)                Alignment may work out wrongly. on input line 533.
 
 
-Overfull \vbox (6.02231pt too high) detected at line 506
+Overfull \vbox (6.02231pt too high) detected at line 533
  []
 
 
-Overfull \vbox (26.76398pt too high) detected at line 506
+Overfull \vbox (27.06398pt too high) detected at line 533
  []
 
 [17
@@ -1285,7 +1419,7 @@ File: images/ecuación01_mod_def_def_3.png Graphic file (type bmp)
 File: images/expression_deconv_3.png Graphic file (type bmp)
 <images/expression_deconv_3.png>
 
-Overfull \hbox (42.67912pt too wide) in paragraph at lines 506--506
+Overfull \hbox (42.67912pt too wide) in paragraph at lines 533--533
  [][] 
  []
 
@@ -1293,14 +1427,14 @@ Overfull \hbox (42.67912pt too wide) in paragraph at lines 506--506
 Package textpos Warning: environment textblock* not in vertical mode. 
 (textpos)                Environment textblock* should not have any text
 (textpos)                or printable material appearing before it.
-(textpos)                Alignment may work out wrongly. on input line 506.
+(textpos)                Alignment may work out wrongly. on input line 533.
 
 
-Overfull \vbox (6.02231pt too high) detected at line 506
+Overfull \vbox (6.02231pt too high) detected at line 533
  []
 
 
-Overfull \vbox (26.76398pt too high) detected at line 506
+Overfull \vbox (27.06398pt too high) detected at line 533
  []
 
 [18
@@ -1343,7 +1477,7 @@ Overfull \vbox (26.76398pt too high) detected at line 506
 File: images/fund_model_0.png Graphic file (type bmp)
 <images/fund_model_0.png>
 )
-Overfull \vbox (26.76398pt too high) detected at line 614
+Overfull \vbox (27.06398pt too high) detected at line 641
  []
 
 [33
@@ -1352,7 +1486,7 @@ Overfull \vbox (26.76398pt too high) detected at line 614
 File: images/fund_model_1.png Graphic file (type bmp)
 <images/fund_model_1.png>
 )
-Overfull \vbox (26.76398pt too high) detected at line 614
+Overfull \vbox (27.06398pt too high) detected at line 641
  []
 
 [34
@@ -1361,7 +1495,7 @@ Overfull \vbox (26.76398pt too high) detected at line 614
 File: images/fund_model_2.png Graphic file (type bmp)
 <images/fund_model_2.png>
 )
-Overfull \vbox (26.76398pt too high) detected at line 614
+Overfull \vbox (27.06398pt too high) detected at line 641
  []
 
 [35
@@ -1370,7 +1504,7 @@ Overfull \vbox (26.76398pt too high) detected at line 614
 File: images/fund_model_3.png Graphic file (type bmp)
 <images/fund_model_3.png>
 )
-Overfull \vbox (26.76398pt too high) detected at line 614
+Overfull \vbox (27.06398pt too high) detected at line 641
  []
 
 [36
@@ -1379,7 +1513,7 @@ Overfull \vbox (26.76398pt too high) detected at line 614
 File: images/ecuación01_mod_def_def_3.png Graphic file (type bmp)
 <images/ecuación01_mod_def_def_3.png>
 )
-Overfull \vbox (26.76398pt too high) detected at line 614
+Overfull \vbox (27.06398pt too high) detected at line 641
  []
 
 [37
@@ -1397,7 +1531,7 @@ File: images/modelo_preentrenado_3.png Graphic file (type bmp)
  (./boxcodes/boxcode1.R)) [39
 
 ]
-Overfull \vbox (9.11435pt too high) detected at line 690
+Overfull \vbox (9.41435pt too high) detected at line 718
  []
 
 [40
@@ -1419,263 +1553,392 @@ File: images/load_data_1.png Graphic file (type bmp)
 \openout4 = `main.vrb'.
 
  (./main.vrb
-File: images/generateBulkMatrix.png Graphic file (type bmp)
-<images/generateBulkMatrix.png>
+File: images/generateBulkMatrix_1_fixed_1.png Graphic file (type bmp)
+<images/generateBulkMatrix_1_fixed_1.png>
 ) [43
 
+] (./main.vrb
+File: images/generateBulkMatrix_2_fixed_1.png Graphic file (type bmp)
+<images/generateBulkMatrix_2_fixed_1.png>
+) [44
+
+] (./main.vrb
+File: images/generateBulkMatrix_3_1.png Graphic file (type bmp)
+<images/generateBulkMatrix_3_1.png>
+) [45
+
 ]
-Missing character: There is no ḿ in font [lmsans10-regular]:mapping=tex-text;!
+\openout4 = `main.vrb'.
 
-
-Package textpos Warning: environment textblock* not in vertical mode. 
-(textpos)                Environment textblock* should not have any text
-(textpos)                or printable material appearing before it.
-(textpos)                Alignment may work out wrongly. on input line 793.
-
-File: images/10x_mod.jpg Graphic file (type bmp)
-<images/10x_mod.jpg>
-
-Overfull \hbox (11.09137pt too wide) in paragraph at lines 793--793
-[][]  
+ (./main.vrb (./boxcodes/boxcode4.R))
+Overfull \vbox (8.83202pt too high) detected at line 790
  []
 
-[44
+[46
 
 ]
-Missing character: There is no ḿ in font [lmsans10-regular]:mapping=tex-text;!
+\openout4 = `main.vrb'.
 
-
-Package textpos Warning: environment textblock* not in vertical mode. 
-(textpos)                Environment textblock* should not have any text
-(textpos)                or printable material appearing before it.
-(textpos)                Alignment may work out wrongly. on input line 793.
-
-File: images/10x_mod.jpg Graphic file (type bmp)
-<images/10x_mod.jpg>
-
-Overfull \hbox (11.09137pt too wide) in paragraph at lines 793--793
-[][]  
- []
-
-[45
-
-] [46
+ (./main.vrb
+File: images/bulkSimulation_1.png Graphic file (type bmp)
+<images/bulkSimulation_1.png>
+) [47
 
 ]
-File: images/gr1_lrg_C.jpg Graphic file (type bmp)
-<images/gr1_lrg_C.jpg>
+\openout4 = `main.vrb'.
 
-Overfull \vbox (19.63136pt too high) detected at line 813
- []
-
-[47
-
-]
-File: images/k5_knn.jpg Graphic file (type bmp)
-<images/k5_knn.jpg>
-File: images/k10_knn.jpg Graphic file (type bmp)
-<images/k10_knn.jpg>
-
-Overfull \vbox (5.62685pt too high) detected at line 846
- []
-
-[48
+ (./main.vrb
+File: images/simulBulk_1_1.png Graphic file (type bmp)
+<images/simulBulk_1_1.png>
+) [48
 
 ]
-File: images/equation_jaccard_1.png Graphic file (type bmp)
-<images/equation_jaccard_1.png>
-File: images/equal.jpg Graphic file (type bmp)
-<images/equal.jpg>
+\openout4 = `main.vrb'.
 
-Overfull \vbox (33.07477pt too high) detected at line 885
+ (./main.vrb
+File: images/preparingSamples_1.png Graphic file (type bmp)
+<images/preparingSamples_1.png>
+)
+Overfull \vbox (6.08714pt too high) detected at line 875
  []
 
 [49
 
 ]
-File: images/figs1_lrg_D.jpg Graphic file (type bmp)
-<images/figs1_lrg_D.jpg>
- [50
+\openout4 = `main.vrb'.
+
+ (./main.vrb (./boxcodes/boxcode5.R)) [50
 
 ]
-File: images/community_graph_2.png Graphic file (type bmp)
-<images/community_graph_2.png>
+\openout4 = `main.vrb'.
 
-Overfull \vbox (36.08626pt too high) detected at line 952
- []
-
-[51
+ (./main.vrb
+File: images/training_DNN_1.png Graphic file (type bmp)
+<images/training_DNN_1.png>
+) [51
 
 ]
-Overfull \vbox (26.76398pt too high) detected at line 1001
+\openout4 = `main.vrb'.
+
+ (./main.vrb (./boxcodes/boxcode6.R)
+File: images/DiagramNeuralNetwork.pdf Graphic file (type pdf)
+<use images/DiagramNeuralNetwork.pdf>
+)
+Overfull \vbox (26.93492pt too high) detected at line 926
  []
 
 [52
 
 ]
-File: images/equation_good.png Graphic file (type bmp)
-<images/equation_good.png>
+\openout4 = `main.vrb'.
 
-Overfull \vbox (26.76398pt too high) detected at line 1001
+ (./main.vrb
+File: images/training_DNN_4_1_1.png Graphic file (type bmp)
+<images/training_DNN_4_1_1.png>
+)
+Overfull \vbox (11.23126pt too high) detected at line 951
  []
 
 [53
 
 ]
-File: images/louvain_example.jpg Graphic file (type bmp)
-<images/louvain_example.jpg>
+\openout4 = `main.vrb'.
 
-Overfull \vbox (3.34pt too high) detected at line 1013
- []
-
-[54
+ (./main.vrb
+File: images/deconvNewSamples_1.png Graphic file (type bmp)
+<images/deconvNewSamples_1.png>
+) [54
 
 ]
-File: images/louvine_method_3.png Graphic file (type bmp)
-<images/louvine_method_3.png>
+\openout4 = `main.vrb'.
 
-Overfull \vbox (28.09pt too high) detected at line 1047
+ (./main.vrb (./boxcodes/boxcode8.R))
+Overfull \vbox (19.87195pt too high) detected at line 973
  []
 
 [55
 
-]
-File: images/louvine_method_3.png Graphic file (type bmp)
-<images/louvine_method_3.png>
-
-Overfull \vbox (28.09pt too high) detected at line 1047
- []
-
-[56
+] [56
 
 ]
-File: images/louvine_method_3.png Graphic file (type bmp)
-<images/louvine_method_3.png>
 
-Overfull \vbox (28.09pt too high) detected at line 1047
- []
+Package fontspec Warning: \addfontfeature(s) ignored on line 1029; it cannot
+(fontspec)                be used with a font that wasn't selected by a
+(fontspec)                fontspec command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmss/m/n/9 ".
+(fontspec)                  The requested feature is "Numbers={Monospaced}". 
 
 [57
 
 ]
-File: images/louvine_method_4.png Graphic file (type bmp)
-<images/louvine_method_4.png>
+\openout4 = `main.vrb'.
 
-Overfull \vbox (28.09pt too high) detected at line 1047
+ (./main.vrb
+File: images/TSNE_all_def_2.png Graphic file (type bmp)
+<images/TSNE_all_def_2.png>
+)
+Overfull \vbox (16.28877pt too high) detected at line 1086
  []
 
 [58
 
 ]
-File: images/louvine_method_4.png Graphic file (type bmp)
-<images/louvine_method_4.png>
+\openout4 = `main.vrb'.
 
-Overfull \vbox (28.09pt too high) detected at line 1047
+ (./main.vrb
+File: images/heatmap_expr_tumor.png Graphic file (type bmp)
+<images/heatmap_expr_tumor.png>
+File: images/tsne_TumorVnoTumor.png Graphic file (type bmp)
+<images/tsne_TumorVnoTumor.png>
+)
+Overfull \vbox (10.91115pt too high) detected at line 1105
  []
 
 [59
 
 ]
-File: images/louvine_method_5.png Graphic file (type bmp)
-<images/louvine_method_5.png>
+\openout4 = `main.vrb'.
 
-Overfull \vbox (28.10417pt too high) detected at line 1047
+ (./main.vrb
+File: images/tsnenoTumorCells_3.png Graphic file (type bmp)
+<images/tsnenoTumorCells_3.png>
+)
+Overfull \vbox (19.48279pt too high) detected at line 1141
  []
 
 [60
 
 ]
-Missing character: There is no ν in font [lmmono10-regular]:!
- [61
+\openout4 = `main.vrb'.
 
-]
-File: images/gr2_lrg_A.jpg Graphic file (type bmp)
-<images/gr2_lrg_A.jpg>
+ (./main.vrb
+File: images/tsneClassFinal_2.png Graphic file (type bmp)
+<images/tsneClassFinal_2.png>
 
-Overfull \vbox (26.76398pt too high) detected at line 1094
- []
-
-[62
-
-]
-File: images/histogram_performance.jpg Graphic file (type bmp)
-<images/histogram_performance.jpg>
-
-Overfull \vbox (1.95961pt too high) detected at line 1094
+Overfull \hbox (45.52197pt too wide) in paragraph at lines 8--9
+ [] 
  []
 
 
-Overfull \vbox (26.76398pt too high) detected at line 1094
+Package textpos Warning: environment textblock* not in vertical mode. 
+(textpos)                Environment textblock* should not have any text
+(textpos)                or printable material appearing before it.
+(textpos)                Alignment may work out wrongly. on input line 13.
+
+
+Overfull \hbox (7.46364pt too wide) in paragraph at lines 17--18
+[][] 
  []
 
-[63
+
+Overfull \hbox (7.46364pt too wide) in paragraph at lines 23--24
+[][] 
+ []
+
+)
+Overfull \vbox (39.38535pt too high) detected at line 1172
+ []
+
+[61
+
+] [62
+
+] [63
 
 ]
-File: images/computation_time_comparison.jpg Graphic file (type bmp)
-<images/computation_time_comparison.jpg>
+File: images/simulSingleCell.png Graphic file (type bmp)
+<images/simulSingleCell.png>
 
-Overfull \vbox (26.76398pt too high) detected at line 1094
+Overfull \vbox (12.05948pt too high) detected at line 1211
  []
 
 [64
 
-] [65
-
 ]
-File: images/gr1_lrg_A.jpg Graphic file (type bmp)
-<images/gr1_lrg_A.jpg>
- [66
+File: images/boxplotsFinal.png Graphic file (type bmp)
+<images/boxplotsFinal.png>
 
-]
-File: images/patients_markers.jpg Graphic file (type bmp)
-<images/patients_markers.jpg>
-
-Overfull \vbox (24.83624pt too high) detected at line 1122
+Overfull \vbox (19.29015pt too high) detected at line 1232
  []
 
-[67
+[65
 
 ]
-File: images/AML_subpoblations.jpg Graphic file (type bmp)
-<images/AML_subpoblations.jpg>
+\openout4 = `main.vrb'.
 
-Overfull \vbox (40.68787pt too high) detected at line 1133
+ (./main.vrb
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 8; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmss/m/n/10 ".
+(fontspec)                  The requested feature is "Numbers={Monospaced}". 
+
+LaTeX Font Info:    Font shape `TU/lmss/bx/it' in size <10> not available
+(Font)              Font shape `TU/lmss/bx/sl' tried instead on input line 16.
+
+Overfull \hbox (0.96136pt too wide) in paragraph at lines 8--22
+ [] 
  []
 
-[68
+) [66
 
-]
-File: images/NMI_comparison.jpg Graphic file (type bmp)
-<images/NMI_comparison.jpg>
+] (./main.vrb
 
-Overfull \vbox (11.10562pt too high) detected at line 1152
+Package fontspec Warning: \addfontfeature(s) ignored on line 8; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmss/m/n/10 ".
+(fontspec)                  The requested feature is "Numbers={Monospaced}". 
+
+
+Overfull \hbox (0.96136pt too wide) in paragraph at lines 8--22
+ [] 
  []
 
-[69
+) [67
 
-] [70
+] (./main.vrb
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 8; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmss/m/n/10 ".
+(fontspec)                  The requested feature is "Numbers={Monospaced}". 
+
+
+Overfull \hbox (0.96136pt too wide) in paragraph at lines 8--22
+ [] 
+ []
+
+) [68
+
+] (./main.vrb
+
+Package fontspec Warning: \addfontfeature(s) ignored on line 8; it cannot be
+(fontspec)                used with a font that wasn't selected by a fontspec
+(fontspec)                command.
+(fontspec)                 
+(fontspec)                 The current font is "\TU/lmss/m/n/10 ".
+(fontspec)                  The requested feature is "Numbers={Monospaced}". 
+
+
+Overfull \hbox (0.96136pt too wide) in paragraph at lines 8--22
+ [] 
+ []
+
+) [69
 
 ]
-File: images/table_methods.png Graphic file (type bmp)
-<images/table_methods.png>
+File: images/modelo_especifico_2_2.png Graphic file (type bmp)
+<images/modelo_especifico_2_2.png>
+File: images/modelo_especifico_1.png Graphic file (type bmp)
+<images/modelo_especifico_1.png>
+File: images/approx.png Graphic file (type bmp)
+<images/approx.png>
 
-Overfull \vbox (4.1348pt too high) detected at line 1184
+Overfull \hbox (10.24518pt too wide) in paragraph at lines 1306--1306
+ [] 
+ []
+
+File: images/modelo_especifico_3_1mod.png Graphic file (type bmp)
+<images/modelo_especifico_3_1mod.png>
+[70
+
+]
+File: images/sinFiltrarSC_2_1.png Graphic file (type bmp)
+<images/sinFiltrarSC_2_1.png>
+
+Overfull \vbox (27.06398pt too high) detected at line 1322
  []
 
 [71
 
-] [72
+]
+File: images/filtradoSC_2.png Graphic file (type bmp)
+<images/filtradoSC_2.png>
 
-] [73
+Overfull \vbox (27.06398pt too high) detected at line 1322
+ []
+
+[72
+
+]
+File: images/modelo1Corr.png Graphic file (type bmp)
+<images/modelo1Corr.png>
+
+Overfull \hbox (17.06921pt too wide) in paragraph at lines 1342--1342
+ [] 
+ []
+
+
+Overfull \vbox (0.71094pt too high) detected at line 1342
+ []
+
+[73
+
+]
+File: images/modeloGenerico_2_cut.png Graphic file (type bmp)
+<images/modeloGenerico_2_cut.png>
+
+Overfull \vbox (16.13449pt too high) detected at line 1361
+ []
+
+[74
+
+] [75
+
+] [76
+
+]
+File: images/totalEspecifico.png Graphic file (type bmp)
+<images/totalEspecifico.png>
+
+Overfull \vbox (27.06398pt too high) detected at line 1422
+ []
+
+[77
+
+]
+File: images/especificoSimplificadoSetTumor.png Graphic file (type bmp)
+<images/especificoSimplificadoSetTumor.png>
+
+Overfull \vbox (27.06398pt too high) detected at line 1422
+ []
+
+[78
+
+]
+File: images/genericoTotal.png Graphic file (type bmp)
+<images/genericoTotal.png>
+
+Overfull \vbox (14.09303pt too high) detected at line 1445
+ []
+
+[79
+
+] [80
+
+] [81
+
+] [82
+
+] [83
+
+] [84
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\translate ' on input line 1214.
+(hyperref)                removing `\translate ' on input line 1510.
 
 \openout4 = `main.vrb'.
 
-(./main.vrb) [74
+(./main.vrb) [85
 
 ]
 \tf@nav=\write6
@@ -1687,21 +1950,21 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 \tf@snm=\write8
 \openout8 = `main.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1245.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1245.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1541.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1541.
  (./main.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1245.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1245.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1541.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1541.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E679850022B050FD522A05E0A9A8F8E7;1036.
+(rerunfilecheck)             Checksum: 0440761AC833C714DBBD12F3EB7F69F1;495.
  ) 
 Here is how much of TeX's memory you used:
- 40457 strings out of 479819
- 955932 string characters out of 5895847
- 1631499 words of memory out of 5000000
- 56674 multiletter control sequences out of 15000+600000
- 552406 words of font info for 77 fonts, out of 8000000 for 9000
+ 43328 strings out of 479819
+ 1033526 string characters out of 5895847
+ 1634824 words of memory out of 5000000
+ 59422 multiletter control sequences out of 15000+600000
+ 552422 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 71i,13n,103p,1920b,2112s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 71i,13n,103p,1924b,2112s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.xdv (74 pages, 664016 bytes).
+Output written on main.xdv (85 pages, 790640 bytes).
