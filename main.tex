@@ -165,6 +165,18 @@
 
 \usepackage{multicol,multirow}
 
+% Bibliografía
+% \usepackage{natbib}
+% \bibliographystyle{plainnat}
+% \setcitestyle{round}
+
+% \bibliography{bibliografia}
+
+% Footer
+% \setbeamertemplate{frame footer}{Máster en Bioinformática y Biología Computacional (2019-2020)}
+\setbeamerfont{page number in head/foot}{size=\tiny}
+\setbeamercolor{footline}{fg=gray}
+
 
 \makeatletter
 \def\rowcolor{\noalign{\ifnum0=`}\fi\bmr@rowcolor}
@@ -264,25 +276,17 @@ Curso 2019-2020}
 
 
 \begin{frame}[fragile]{Papel del sistema inmune en la enfermedad}
-  \Fonteight
-  \begin{alertblock}{Papel clave}
+  % \Fontvi
     \begin{itemize}
-      \item La similitud entre células será máxima cuando sus $k$-vecinos son los
-            mismos $\rightarrow$ mismo fenotipo.
-      \item Similitud decaerá entre células que compartan menos vecinos conectados
-            $\rightarrow$ distinto fenotipo.
+      \item En tumores sólidos establece lo que se conoce como contexto inmune: localización, densidad y organización funcional.
+      \item Sisteme inmune presenta un papel dicotómico: 
+      \begin{itemize}
+        \item Supresión tumoral: linfocitos T CD8+, células B de memoria, etc.
+        \item Progresión tumoral: linfocitos T reguladores, algunos macrófagos, etc. 
+      \end{itemize}
+      \item \alert{Terapias:} Quimioterapias inmunogénicas como oxaliplatino, anticuerpos inhibidores de puntos de control inmunitario: PD-1, CTLA-4, receptores coestimuladores de la respuesta inmumne, etc.
     \end{itemize}
-  \end{alertblock}
-
-  \begin{alertblock}{Terapias}
-    \begin{itemize}
-      \item La similitud entre células será máxima cuando sus $k$-vecinos son los
-            mismos $\rightarrow$ mismo fenotipo.
-      \item Similitud decaerá entre células que compartan menos vecinos conectados
-            $\rightarrow$ distinto fenotipo.
-    \end{itemize}
-  \end{alertblock}
-
+  \vskip-1em
   \begin{figure}
     \centering
     \includegraphics[width=7cm]{images/balance_Imm_2.png}
@@ -294,38 +298,38 @@ Curso 2019-2020}
 \begin{frame}[fragile]{Caso de estudio: cáncer de mama}
   \vskip1em
   Enfermedad altamente \alert{\textbf{heterogénea desde el punto de vista molecular}}.
-  \Fontvi
-  \vskip0.5em
-  \begin{columns}
-    \begin{column}{0.5\textwidth}
-      \vskip-0.5em
+  \Fonteight
+  \vskip-0.5em
+  \begin{columns}[t]
+    \begin{column}{0.35\textwidth}
+      % \vskip-0.5em
       \begin{alertblock}{Subtipos intrínsecos del cáncer}
         \vskip-0.5em
-        \Fonteight{
           \begin{itemize}
             \item Luminal A (ER+).
             \item Luminal B (ER+/HER2+).
             \item HER2 enriquecido (HER2+).
             \item Triple negativo (TNBC).
           \end{itemize}
-        }
       \end{alertblock}
-      \includegraphics[width=7cm]{images/tabla_breast_2_mod.png}
     \end{column}
-    \begin{column}{0.6\textwidth}
-      \begin{alertblock}{Importancia de las células inmunes infiltradas}
+    \begin{column}{0.65\textwidth}
+      \begin{alertblock}{Importancia del sistema inmune}
         \vskip-0.5em
-        \Fonteight{
           \begin{itemize}
-            \item Luminal A (ER+).
-            \item Luminal B (ER+/HER2+).
-            \item HER2 enriquecido (HER2+).
-            \item Triple negativo (TNBC).
+            \item $\uparrow$ linfocitos T CD8+ $\rightarrow$ $\uparrow$ supervivencia.
+            \item $\uparrow$ linfocitos T CD4+ reguladores $\rightarrow$ $\uparrow$ efecto inmunosupresor.
+            \item $\uparrow$ TILs $\rightarrow$ beneficioso en pacientes tratados con trastuzumab.
+            \item Quimioterapias neoadyuvantes.
           \end{itemize}
-        }
       \end{alertblock}
     \end{column}
   \end{columns}
+  \vskip-3mm
+  \begin{figure}
+    \centering
+    \includegraphics[width=7cm]{images/tabla_breast_2_mod.png}
+  \end{figure}
 \end{frame}
 
 % Tecnologías para estudiar células: scRNAseq --------------------------------------
@@ -566,20 +570,20 @@ Curso 2019-2020}
   %   \vskip0.20em
   %   Grafo ponderado con pesos basados en el número de vecinos que comparten.
   % \end{alertblock}
-  \begin{enumerate}[<alert@+>]
-    \item Transformación de la \textit{pipeline} original en un paquete de R.
+  \begin{enumerate}
+    \item \alert<1>{Transformación de la \textit{pipeline} original en un paquete de R.}
           \begin{itemize}
             \item Unificación de los lenguajes de programación $\rightarrow$ R.
             \item Evitar la lectura/escritura de ficheros tabulados en disco.
             \item Funcionalidades nuevas $\rightarrow$ uso de ficheros HDF5 como \textit{back-end}, implementación de parámetros para construir modelos más personalizados.
             \item Generación de documentación y viñeta $\rightarrow$ facilitar su uso.
           \end{itemize}
-    \item Análisis de datos \textit{scRNA-seq} procedentes de cáncer de mama.
+    \item \alert<2>{Análisis de datos \textit{scRNA-seq} procedentes de cáncer de mama.}
           \begin{itemize}
             \item Separación tipos tumorales y no tumorales.
             \item Identificación de tipos celulares no tumorales.
           \end{itemize}
-    \item Aplicación de la herramienta implementada.
+    \item \alert<3>{Aplicación de la herramienta implementada.}
           \begin{itemize}
             \item Construcción de varios modelos y comparativa.
             \item Incorporación de los mejores como modelos preentrenados en el paquete.
@@ -633,7 +637,7 @@ Curso 2019-2020}
     }
 
     \begin{enumerate}
-      \alert<2>{\item Simulación de perfiles \textit{scRNA-seq} (si es necesario):} uso del modelo ZINB-WaVE en caso de tipos celulares poco representados o pocas células de partida.
+      \alert<2>{\item Entrada de perfiles \textit{single-cell} caracterizados.} Simulación de nuevos perfiles con el modelo ZINB-WaVE en caso de tipos celulares poco representados o pocas células de partida.
             \alert<3>{\item Simulación de perfiles \textit{bulk RNA-seq} de composición celular conocida:} agregación de perfiles \textit{single-cell} en función del tipo celular al que pertenecen.
             \alert<4>{\item Entrenamiento y evaluación de la Red Neuronal Profunda:} deconvolución de nuevas muestras \textit{bulk}.
     \end{enumerate}
@@ -644,12 +648,12 @@ Curso 2019-2020}
 
 % \subsection{2.1. digitalDLSorteR: flujo de trabajo}
 
-\begin{frame}{digitalDLSorteR: flujo de trabajo}
+\begin{frame}{digitalDLSorteR: paquete de R}
 
   \begin{alertblock}{Objetivo del método como paquete}
     \begin{enumerate}
       \item Permitir la deconvolución directa de muestras \textit{bulk RNA-seq}.
-      \item Permitir la construcción de nuevos modelos a partir de datos \textit{scRNA-seq}
+      \item Permitir la construcción de nuevos modelos a partir de datos \textit{scRNA-seq}.
     \end{enumerate}
   \end{alertblock}
 
@@ -778,7 +782,7 @@ Curso 2019-2020}
     \Fontvi
     \begin{itemize}
       \item Generación de un objeto \textit{ProbMatrixCellTypes} en el slot \textit{prob.cell.types}.
-      \item 6 métodos distintos para evitar posibles sesgos en la composición de las muestras \textit{bulk}.
+      \item 5 métodos distintos para evitar posibles sesgos en la composición de las muestras \textit{bulk}.
       \item Perfiles \textit{single-cell} son separados en entrenamiento y test.
     \end{itemize}
   \end{textblock*}
@@ -837,7 +841,7 @@ Curso 2019-2020}
     \begin{column}{0.65\textwidth}
       \Fontvi
       \begin{itemize}
-        \item Sumatorio de \texttt{n.cells} (100 en este caso) perfiles \textit{single-cell} ($z$) en función del tipo celular ($k$) al que pertenezcan para cada muestra \textit{bulk} ($j$).
+        \item Sumatorio de los niveles de expresión del gen $i$ de \texttt{n.cells} (100 por defecto) células ($z$) en función del tipo celular ($k$) al que pertenezcan para cada muestra \textit{bulk} ($j$).
         \item Implementación: posibilidad de utilizar ficheros HDF5 como \textit{back-end}: paquetes DelayedArray y HDF5Array.
       \end{itemize}
       \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
@@ -862,14 +866,15 @@ Curso 2019-2020}
             \item Solo perfiles \textit{bulk}.
             \item Combinación de ambos.
           \end{itemize}
-    \item Normalización: cálculo CPM y establecimiento de $\mu = 0$ y $\sigma = 1$
+    \item Normalización: cálculo CPM y establecimiento de $\mu = 0$ y $\sigma = 1$.
+    \item Aleatorización de las muestras.
     \item Transposición de la matriz resultante.
   \end{itemize}
 
   \vskip1em
 
   \begin{beamercolorbox}[sep=0.2cm,center]{coloredboxstuff}
-    Posibilidad de usar ficheros HDF5 $\rightarrow$ rápida lectura de las muestras durante entrenamiento y predicción
+    Posibilidad de usar ficheros HDF5 $\rightarrow$ rápida lectura de las muestras \\durante entrenamiento y predicción.
   \end{beamercolorbox}
 
 \end{frame}
@@ -905,6 +910,7 @@ Curso 2019-2020}
       \vskip-1em
       \lstinputlisting[]{./boxcodes/boxcode6.R}
       \Fontvi{
+        \alert{\textbf{Instalación:}} README del repositorio: \href{https://github.com/diegommcc/digitalDLSorteR}{\url{diegommcc/digitalDLSorteR}}.
         \begin{alertblock}{Parámetros}
           \begin{itemize}
             \item Número de épocas con \texttt{num.epochs}.
@@ -984,7 +990,7 @@ Curso 2019-2020}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\section[Análisis de datos \textit{scRNA-seq}]{Análisis de datos \textit{scRNA-seq}}
+\section[Análisis de datos \textit{scRNA-seq} de cáncer de mama]{Análisis de datos \textit{scRNA-seq} de cáncer de mama}
 
 
 \begin{frame}{Datos utilizados}
@@ -994,9 +1000,9 @@ Curso 2019-2020}
   \begin{columns}
     \begin{column}{0.4\textwidth}
       \begin{itemize}
-        \item Se utilizaron las lecturas obtenidas de la base de datos SRA (\href{https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP066982}{SRP066982}).
         \item 11 pacientes que representan los 4 subtipos de cáncer de mama.
         \item Total células: 549.
+        \item Se utilizaron las lecturas obtenidas de la base de datos SRA (\href{https://trace.ncbi.nlm.nih.gov/Traces/sra/?study=SRP066982}{SRP066982}).
       \end{itemize}
     \end{column}
     \begin{column}{0.6\textwidth}
@@ -1089,7 +1095,7 @@ Curso 2019-2020}
 
   \begin{columns}
     \begin{column}{0.7\textwidth}
-      \Fontvi{Aproximación seguida por los autores del artículo: comparativa de los \alert{patrones de expresión} entre células y tejido mamario normal.}
+      \Fontvi{\alert{--} Aproximación seguida por los autores del artículo: comparativa de los \alert{patrones de expresión} entre células y tejido mamario normal.\\\alert{--} Cálculo de Z-scores y clusterización jerárquica (UPGMA).}
       \begin{figure}
         \includegraphics[width=9cm]{images/heatmap_expr_tumor.png}
       \end{figure}
@@ -1128,7 +1134,7 @@ Curso 2019-2020}
       \begin{itemize}
         \item Normalización: 733 genes más variables.
         \item Reducción de la dimensionalidad: 8 componentes principales.
-        \item Clusterización: 9 clústeres.
+        \item Clusterización: 10 clústeres.
       \end{itemize}
     \end{column}
   \end{columns}
@@ -1219,6 +1225,13 @@ Curso 2019-2020}
       \end{figure}
     \end{column}
     \begin{column}{0.5\textwidth}
+      \Fontvi
+      \begin{alertblock}{Parámetros utilizados}
+        \begin{itemize}
+          \item 31.000 muestras \textit{bulk} compuestas por 100 células cada una. 
+          \item Proporciones generadas por cada modelo: por defecto $\rightarrow$ 85\% con mayor aleatoriedad. 
+        \end{itemize}
+      \end{alertblock}
       \begin{alertblock}{Modelos construidos (datos entrenamiento)}
         \begin{enumerate}
           \item Modelo específico 1 $\rightarrow$ solo \textit{bulk}: 18.451 muestras.
@@ -1453,23 +1466,44 @@ Curso 2019-2020}
 
 \begin{frame}{digitalDLSorter como método de deconvolución}
   \begin{alertblock}{Resultados obtenidos}
-    
+    \begin{itemize}
+      \item Modelos entrenados con perfiles \textit{scRNA-seq} procedentes del entorno de estudio.
+      \item Mejora constante de conjuntos de datos \textit{scRNA-seq} $\rightarrow$ mejores modelos de deconvolución.
+      \item ZINB-WaVE ofrece buenos perfiles \textit{single-cell} simulados. 
+      \item Uso de Redes Neuronales: buenas representaciones de los tipos celulares. 
+      \item Simulación de perfiles \textit{bulk}: reduce el ruido intrínseco de los perfiles \textit{single-cell} y fuerza a encontrar patrones específicos. 
+    \end{itemize}
   \end{alertblock}
 
   \begin{alertblock}{Limitaciones y trabajo futuro}
-    
+    \begin{itemize}
+      \item Altamente dependiente de la calidad de los datos de partida. 
+      \item Interpretabilidad pobre: naturaleza de 'caja negra' de las redes neuronales. 
+    \end{itemize}
   \end{alertblock}
   
 \end{frame}
 
 
 \begin{frame}{digitalDLSorteR como paquete de R}
+  \Fontvi
   \begin{alertblock}{Aportaciones}
-    
+    \begin{itemize}
+      \item Implementación formal de cada uno de los pasos. 
+      \item Funciones de evaluación del desempeño de los modelos. 
+      \item Parámetros que permiten modelos más personalizables. 
+      \item Uso de ficheros HDF5 como \textit{back-end}. 
+    \end{itemize}
   \end{alertblock}
-
+% Decir que con los perfiles \textit{single-cell} no basta
   \begin{alertblock}{Limitaciones y trabajo futuro}
-    
+    \begin{itemize}
+      \item Ausencia del directorio test en el paquete: han sido incluidos los test correspondientes a la carga de datos (fichero loadData.R) y a la generación de las matrices de composición celular (fichero generateTranAndTestProbMatrix.R).
+      \item Carga de las muestras \textit{bulk} simuladas en memoria antes de su escritura en disco como ficheros HDF5. 
+      \item Imposibilidad de paralelizar entrenamiento red neuronal.
+      \item Permitir el uso de redes neuronales arquitecturas diferentes. 
+      \item Implementación del método como servicio Web (aplicación Shiny).
+    \end{itemize}
   \end{alertblock}
   
 \end{frame}
@@ -1480,23 +1514,17 @@ Curso 2019-2020}
 %--------------------------------------------------------------------------%
 
 
+
 \begin{frame}{Referencias}
   \Fonteight
   \hskip-1em
   \begin{itemize}
-    \item Blondel VD, Guillaume JL, Lambiotte R and Lefebvre E. (2008). Fast unfolding of
-          communities in large networks. \textit{Journal of Statistical Mechanics: Theory and Experiment}.
-    \item Girvan M, Newman, MEJ. (2002). Community structure in social and biological networks.
-          \textit{Proceedings of the National Academy of Sciences}. 99 (12):7821–7826.
-    \item Levine JH, Simonds EF, Bendall SC, Davis KL, Amir ED, Tadmor MD, et al. (2015). Data-driven
-          phenotypic dissection of AML reveals progenitor-like cells that correlate with prognosis.
-          \textit{Cell}. 162:184–97.
-    \item Liu X, Song W, Wong BY, et al. (2019). A comparison framework and guideline of clustering
-          methods for mass cytometry data. \textit{Genome Biol}. 20:297–301.
-    \item Newman, MEJ. (2006). Modularity and community structure in networks.
-          \textit{Proceedings of the National Academy of Sciences}. 103 (23):8577–8582
-    \item Weber LM and Robinson MD. (2016). Comparison of clustering methods for high‐dimensional
-          single‐cell flow and mass cytometry data. \textit{Cytometry}. 89:1084–1096.
+    \item W. Chung, H. H. Eum, H. O. Lee, K. M. Lee, H. B. Lee, K. T. Kim, H. S. Ryu, S. Kim, J. E.
+    Lee, Y. H. Park, Z. Kan, W. Han, y W. Y. Park. Single-cell RNA-seq enables comprehensive
+    tumour and immune cell profiling in primary breast cancer. Nat Commun, 8:15081, may.
+    2017. doi: 10.1038/ncomms15081.
+    \item C. Torroja y F. Sanchez-Cabo. Digitaldlsorter: Deep-Learning on scRNA-Seq to deconvolute
+    gene expression data. Front Genet, 10:978, oct. 2019. doi: 10.3389/fgene.2019.00978.
   \end{itemize}
 \end{frame}
 

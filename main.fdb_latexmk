@@ -1,11 +1,11 @@
 # Fdb version 3
-["xdvipdfmx"] 1599748062 "main.xdv" "main.pdf" "main" 1599748085
-  "main.xdv" 1599748062 790640 a17f7f39d2d11270d22ab98ccc3c5630 "xelatex"
+["xdvipdfmx"] 1599784530 "main.xdv" "main.pdf" "main" 1599784553
+  "main.xdv" 1599784530 676504 649d4e92f2c6872e3141e39efb0c1db4 "xelatex"
   (generated)
   "main.pdf"
-["xelatex"] 1599748058 "/home/diegommcc/Documentos/Máster Bioinformática UAM/TFM/TFM_presentación/TFM-Presentación-Tex/main.tex" "main.xdv" "main" 1599748085
+["xelatex"] 1599784526 "/home/diegommcc/Documentos/Máster Bioinformática UAM/TFM/TFM_presentación/TFM-Presentación-Tex/main.tex" "main.xdv" "main" 1599784553
   "/etc/texmf/web2c/texmf.cnf" 1588866712 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/diegommcc/Documentos/Máster Bioinformática UAM/TFM/TFM_presentación/TFM-Presentación-Tex/main.tex" 1599748053 54797 1ca0ff231f7874a52ef5d1c5ff1060c9 ""
+  "/home/diegommcc/Documentos/Máster Bioinformática UAM/TFM/TFM_presentación/TFM-Presentación-Tex/main.tex" 1599784526 57051 c6b28c8bbdc389949a52bce62be8fc4b ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm" 1136768653 1536 06717a2b50de47d4087ac0e6cd759455 ""
@@ -365,18 +365,18 @@
   "images/tumor_hallmarks_degradado_3.png" 1599589750 797592 c0f567057ea3804b79a317191695c4a0 ""
   "images/tumor_heterogenity_bw.png" 1586640722 418001 69b9a8d3456946075ce4e48e08ee0237 ""
   "images/tumor_heterogenity_color.png" 1586640803 1180344 aebc2be9710906a827599136953be221 ""
-  "main.aux" 1599748062 12540 5ded033e7379f782d233cb1938301031 "xelatex"
-  "main.nav" 1599748062 6974 aebcaf29448942665b57284faffb7089 "xelatex"
-  "main.out" 1599748062 495 0440761ac833c714dbbd12f3eb7f69f1 "xelatex"
-  "main.tex" 1599748053 54797 1ca0ff231f7874a52ef5d1c5ff1060c9 ""
-  "main.toc" 1599748062 476 7fb77d165a48fa152b16970ee026a772 "xelatex"
-  "main.vrb" 1599748062 626 4ece5336f13eca6a56a228968d73a916 "xelatex"
+  "main.aux" 1599784530 12597 735659fbb5792969017d1f7c2752ca1a "xelatex"
+  "main.nav" 1599784530 7012 e19f913757bfab35d299a7d506628d46 "xelatex"
+  "main.out" 1599784530 514 e68f6e6c1cb2d45d729a31fd3bbe3977 "xelatex"
+  "main.tex" 1599784526 57051 c6b28c8bbdc389949a52bce62be8fc4b ""
+  "main.toc" 1599784530 495 6a5f695f17584c28b20715a59cbabaea "xelatex"
+  "main.vrb" 1599784530 626 4ece5336f13eca6a56a228968d73a916 "xelatex"
   (generated)
-  "main.aux"
-  "main.out"
-  "main.nav"
   "main.vrb"
-  "main.snm"
+  "main.aux"
   "main.toc"
+  "main.out"
+  "main.snm"
   "main.log"
   "main.xdv"
+  "main.nav"

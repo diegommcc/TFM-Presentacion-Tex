@@ -1,6 +1,6 @@
 \beamer@sectionintoc {1}{Introducción y contexto}{3}{0}{1}
 \beamer@sectionintoc {2}{Objetivos}{20}{0}{2}
-\beamer@sectionintoc {3}{digitalDLSorteR: transformación de la \textit {pipeline} en paquete de R}{32}{0}{3}
-\beamer@sectionintoc {4}{Análisis de datos \textit {scRNA-seq}}{56}{0}{4}
-\beamer@sectionintoc {5}{Puesta en práctica de digitalDLSorteR: deconvolución muestras de cáncer de mama}{62}{0}{5}
-\beamer@sectionintoc {6}{Conclusiones y trabajo futuro}{80}{0}{6}
+\beamer@sectionintoc {3}{digitalDLSorteR: transformación de la \textit {pipeline} en paquete de R}{24}{0}{3}
+\beamer@sectionintoc {4}{Análisis de datos \textit {scRNA-seq} de cáncer de mama}{48}{0}{4}
+\beamer@sectionintoc {5}{Puesta en práctica de digitalDLSorteR: deconvolución muestras de cáncer de mama}{54}{0}{5}
+\beamer@sectionintoc {6}{Conclusiones y trabajo futuro}{72}{0}{6}
